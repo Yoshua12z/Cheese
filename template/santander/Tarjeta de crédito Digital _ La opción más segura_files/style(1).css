@@ -1,0 +1,2274 @@
+footer {
+    padding-top: 72px;
+}
+
+.txtSolicitarTarjeta {
+    font-family: 'Santander Headline';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #EC0000 !important;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.cuerpoPagina {
+    margin-top: 120px;
+}
+
+/*Estilos Breadcrumbs*/
+.contenedorBreadcrums {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.bread {
+    margin-bottom: 4%;
+}
+
+ul.bread {
+    list-style: none;
+}
+
+ul.bread li {
+    display: inline;
+    font-size: 15px;
+}
+
+ul.bread li+li:before {
+    padding: 5px;
+    color: #767676;
+    content: ">";
+}
+
+ul.bread li a {
+    color: #767676;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+    .bread {
+        display: none;
+    }
+}
+
+.icoMiniSant {
+    width: 44.2px;
+    height: 42.28px;
+    margin-bottom: 48px;
+}
+
+/*Estilos Banner*/
+
+.centraInfoBanner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: -100px;
+}
+
+.contenedorInfoBanner {
+    width: 100%;
+}
+
+.icoMiniSant {
+    width: 44.2px;
+    height: 42.28px;
+}
+
+.h1BannerInfo {
+    font-family: 'Santander Headline';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 100%;
+    color: #EC0000;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 24px 0px;
+}
+
+.pBannerInfo {
+    width: 520px;
+    height: 90px;
+    font-family: 'Santander Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+}
+
+.contenedorBannerInfo {
+    margin-top: -30px;
+}
+
+.mtop {
+    margin-top: 15px;
+}
+
+.imgBannerDetalleTdc {
+    width: 625px;
+    height: 625px;
+}
+
+@media screen and (max-width:1200px) {
+    .centraInfoBanner {
+        margin-top: -50px;
+    }
+
+    .h1BannerInfo {
+        font-size: 32px;
+    }
+
+    .pBannerInfo {
+        width: auto;
+        height: auto;
+        font-size: 18px;
+    }
+
+    .imgBannerDetalleTdc {
+        width: 525px;
+        height: 525px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .centraInfoBanner {
+        margin-top: 0px;
+    }
+
+    .imgBannerDetalleTdc {
+        width: 425px;
+        height: 425px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .contenedorInfoBanner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .h1BannerInfo {
+        text-align: center;
+    }
+
+    .pBannerInfo {
+        text-align: center;
+    }
+
+    .contenedorBannerInfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .seccionMasBeneficios {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .seccionMasBeneficios .pad5,
+    .seccionMasBeneficios .pad10 {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .seccionMasBeneficios .smallMasBenef {
+        font-family: 'Santander Micro Text';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        color: #404040;
+
+    }
+
+    .contenedorInfoBanner {
+        margin-top: -30px;
+        width: 100%;
+    }
+
+    .centraInfoBanner {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .contenedorBannerInfo {
+        margin-top: -50px;
+    }
+
+    .imgBannerDetalleTdc {
+        width: 323.39px;
+        height: 323.39px;
+    }
+}
+
+.titleBeneficios {
+    font-family: 'Santander Headline';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 125%;
+    text-align: center;
+    color: #191919;
+}
+
+.descripBeneficios {
+    font-family: 'Santander Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    text-align: center;
+    color: #404040;
+}
+
+.contenedorBeneficiosDesktop {
+    display: flex;
+    justify-content: center;
+}
+
+#spaceBenefits {
+    width: 90%;
+    height: 610px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.icoBenef {
+    width: 64px;
+    height: 64px;
+}
+
+
+/* .contenedeorIcoPar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+} */
+
+.contenedeorIcoParIzq {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.contenedeorIcoParDer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+/* .special{
+    margin-top: 20% !important;
+} */
+
+.contInfBenefit {
+    width: 267px;
+    height: 152px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.titleInfoBenefit {
+    font-family: 'Santander Headline';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 125%;
+    text-align: center;
+    color: #191919;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 2px 0px;
+}
+
+.pInfoBenefit {
+    font-family: 'Santander Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #404040;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 2px 0px;
+}
+
+
+.centraColImg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contImgTarjetaDetalle {
+    margin-top: -550px;
+
+}
+
+.tarjetaDetalleHorizontal{
+    z-index: 2;
+}
+
+.img-puntos-detalle-horizontal{
+    position: absolute;
+    width: 150px;
+    height: 120px;
+    top: 80px;
+    right: 180px;
+    z-index: 1;
+}
+
+.img-elipses-detalle-horizontal {
+    position: absolute;
+    width: 380px;
+    height: 380px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+.img-sombra-detalle-horizontal {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 55%;
+}
+
+@media screen and (max-width: 992px){
+
+    .tarjetaDetalleHorizontal{
+        width: 200px;
+        z-index: 2;
+    }
+    
+    .img-puntos-detalle-horizontal{
+        position: absolute;
+        width: 100px;
+        height: 80px;
+        top: -50px;
+        right: 85px;
+        z-index: 1;
+    }
+
+    .img-elipses-detalle-horizontal {
+        position: absolute;
+        width: 280px;
+        height: 280px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+    }
+    
+    .img-sombra-detalle-horizontal {
+        position: absolute;
+        bottom: -20px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 100%;
+    }
+
+   
+    
+
+}
+@media screen and (max-width: 576px){
+
+    .tarjetaDetalleHorizontal{
+        width: 299px;
+        height: 188px;
+    }
+    
+    
+
+}
+
+.contenedorImgDetalle {
+    width: 530px;
+    height: 545.36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-puntos-detalle {
+    position: absolute;
+    width: 222.96px;
+    height: 120px;
+    top: 23px;
+    right: 120px;
+    z-index: 1;
+}
+
+.img-elipses-detalle {
+    position: absolute;
+    width: 480px;
+    height: 480px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+.tarjetaDetalle {
+    width: 300px;
+    height: 450px;
+    z-index: 2;
+}
+
+.img-sombra-detalle {
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+}
+
+.seccionBeneficiosTdcDetalle {
+    margin-top: 50px;
+}
+
+.seccionCarruselMobile {
+    display: none;
+}
+
+.contenedorMobileBenef {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.centraTxtBenef {
+    text-align: center;
+}
+
+
+@media screen and (max-width: 1200px) {
+
+    .contImgTarjetaDetalle {
+        margin-top: -440px;
+
+    }
+
+    .contenedorImgDetalle {
+        width: 100%;
+        height: auto;
+    }
+
+    .img-puntos-detalle {
+        width: 150px;
+        height: 100px;
+        top: -20px;
+        right: 100px;
+    }
+
+    .img-elipses-detalle {
+        width: 380px;
+        height: 380px;
+    }
+
+
+
+    .tarjetaDetalle {
+        width: 227px;
+        height: 350px;
+    }
+
+    .contInfBenefit {
+        width: 180px;
+        height: 120px;
+    }
+
+    .icoBenef {
+        width: 32px;
+        height: 32px;
+    }
+
+    .titleInfoBenefit {
+        font-size: 20px;
+        line-height: 125%;
+    }
+
+    .pInfoBenefit {
+        font-size: 14px;
+        line-height: 150%;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+
+    .contImgTarjetaDetalle {
+        margin-top: -440px;
+
+    }
+
+    .img-puntos-detalle {
+        width: 100px;
+        height: 80px;
+        top: -10px;
+        right: 80px;
+    }
+
+    .img-elipses-detalle {
+        width: 250px;
+        height: 250px;
+    }
+
+
+    .tarjetaDetalle {
+        width: 150px;
+        height: 230px;
+    }
+
+    .contInfBenefit {
+        width: 180px;
+        height: 120px;
+    }
+
+    .icoBenef {
+        width: 32px;
+        height: 32px;
+    }
+
+    .titleInfoBenefit {
+        font-size: 20px;
+        line-height: 125%;
+    }
+
+    .pInfoBenefit {
+        font-size: 14px;
+        line-height: 150%;
+    }
+
+}
+
+
+@media screen and (max-width: 767px) {
+
+    .seccionCarruselMobile {
+        display: block;
+        margin-top: 100px !important;
+    }
+
+    .seccionBeneficiosTdcDetalle {
+        margin-top: 100px;
+    }
+
+    .contenedorBeneficiosDesktop {
+        display: none !important;
+
+    }
+
+    .contImgTarjetaDetalle {
+        margin-top: 50px;
+
+    }
+
+    .img-puntos-detalle {
+        width: 150px;
+        height: 100px;
+        top: -20px;
+        right: 100px;
+    }
+
+    .img-elipses-detalle {
+        width: 380px;
+        height: 380px;
+    }
+
+
+    .tarjetaDetalle {
+        width: 227px;
+        height: 350px;
+    }
+
+}
+
+
+@media screen and (max-width: 576px) {
+
+    .img-puntos-detalle {
+        width: 99.31px;
+        height: 80px;
+        top: -10px;
+        right: 80px;
+    }
+
+    .img-elipses-detalle {
+        width: 327px;
+        height: 327px;
+    }
+
+
+    .tarjetaDetalle {
+        width: 187px;
+        height: 298px;
+    }
+
+    .img-sombra-detalle {
+        width: 100% !important;
+        height: 100px !important;
+        bottom: -80px;
+    }
+
+
+
+    .pInfoBenefit, .titleInfoBenefit {
+        width: 200px;
+    }
+
+}
+
+.seccionBtnDetalleTdc {
+    margin-top: 30px;
+}
+
+.seccionBtnDetalleTdc .btnRedSantander {
+    margin-top: 0px !important;
+}
+
+@media screen and (max-width: 992px){
+    .seccionBtnDetalleTdc {
+        margin-top: 180px;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+
+    .seccionBtnDetalleTdc {
+        margin-top: 80px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 576px) {
+
+    .seccionBtnDetalleTdc {
+        margin-top: 100px !important;
+    }
+
+}
+
+
+/*Estilos de sección requisitos, costos y descargas*/
+
+
+.seccionRequisitosCostosYdescargas {
+    position: relative;
+    height: auto;
+    width: 100%;
+    margin-top: 168px;
+}
+
+.imgLateral {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 439px;
+    height: 615px;
+}
+
+.imgLateralMobile {
+    display: none;
+}
+
+@media screen and (max-width: 1200px) {
+    .imgLateral {
+        width: 400px;
+        height: 576px;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    .imgLateral {
+        width: 300px;
+        height: 476px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+}
+
+@media screen and (max-width: 576px){
+    .contImgLatMobil {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }  
+
+    .imgLateralMobile {
+        display: block;
+        width: 327px;
+        height: 295px;
+        margin-right: -24px !important;
+    }
+    
+
+    .imgLateral {
+        display: none;
+    }
+
+}
+
+.pad5 {
+    padding-left: 50px;
+}
+
+.contenedorTituloDetallesTDC {
+    width: 100%;
+    margin-top: 48px;
+    margin-bottom: 52px;
+}
+
+.seccionRequisitosCostosYdescargas .icoPalomita {
+    width: 26px;
+    height: 26px;
+}
+
+.contenedorPsmall {
+    position: relative;
+    width: 100%;
+    margin-left: 10px;
+
+}
+
+.smallCondicion {
+    margin-top: 24px;
+    margin-bottom: 37px;
+}
+
+small {
+    font-family: 'Santander Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #404040;
+}
+
+.divSmallNone {
+    display: none !important;
+}
+
+.divSmall {
+    height: auto;
+    font-family: 'Santander Micro Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px !important;
+    color: #404040;
+}
+
+.conAltura {
+    height: auto !important;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+@media screen and (max-width: 576px) {
+    .seccionRequisitosCostosYdescargas {
+        margin-top: 104px;
+    }
+
+
+    .seccionRequisitosCostosYdescargas .txtBicolor {
+        text-align: left !important;
+    }
+
+    .contenedorTituloDetallesTDC {
+        margin-bottom: 28px;
+    }
+
+    .contenedorPsmall {
+        position: relative;
+        width: 294px;
+        margin-left: 10px;
+    }
+
+    .divSmall {
+        width: 294px;
+    }
+
+
+
+
+    .pad5 {
+        padding-left: 10px;
+    }
+
+}
+
+.spanBlack {
+    font-family: 'Santander Text';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0.05em;
+    color: #404040;
+}
+
+.spanNormal {
+    font-family: 'Santander Micro Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #404040;
+}
+
+.smallCostoYb {
+    font-family: 'Santander Micro Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #767676;
+    width: 210px;
+}
+
+.smallCostoYbenef {
+    font-family: 'Santander Micro Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #767676;
+    margin-top: 15px;
+}
+
+.formaBtnDescarga {
+    background: #FFFFFF;
+    border: 1px solid #767676;
+    box-sizing: border-box;
+    border-radius: 8px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 0px;
+}
+
+.fuenteBtnDescarga {
+    font-family: 'Santander Micro Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #767676;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 8px;
+}
+
+.btnDescarga {
+    padding-top: 13.5px;
+    padding-bottom: 13.5px;
+    padding-right: 24px;
+    padding-left: 56px;
+}
+
+.btnDescargaLong {
+    background-image: url('../img/iconos/icono-pdf.png');
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-position: 10% 50%;
+}
+
+.btnDescargaShort {
+    background-image: url('../img/iconos/icono-pdf.png');
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-position: 20% 50%;
+}
+
+.contBtnsDescargas {
+    display: flex;
+    padding: 0 !important;
+}
+
+@media screen and (max-width: 1200px) {
+
+
+    .contBtnsDescargas {
+        flex-wrap: wrap;
+    }
+
+    .anchorBtnsDescargas {
+        margin-bottom: 8px;
+    }
+
+
+
+}
+
+@media screen and (max-width: 576px) {
+    .contBtnsDescargas {
+        flex-direction: column;
+    }
+
+
+
+}
+
+
+
+/* Estilos para opción desplegable "ver mas información" */
+
+
+.seccVerMasInfo {
+    margin-top: 37.5px;
+}
+
+
+.caja-acordeon-tyc {
+    margin-bottom: 5px;
+}
+
+.caja-acordeon-tyc .accordioncito {
+    background-color: white;
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+    /*Fuente*/
+    font-family: 'Santander Micro Text';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: left;
+    color: #404040;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 4px;
+    position: relative;
+}
+
+.caja-acordeon-tyc .accordioncito.active,
+.caja-acordeon-tyc .accordioncito:hover {
+    background-color: white;
+}
+
+.caja-acordeon-tyc .accordioncito:before {
+    content: url(../img/iconos/flecha-down.png);
+    transform: scale(.5);
+    position: absolute;
+    left: 130px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.caja-acordeon-tyc .accordioncito:after {
+    display: none;
+}
+
+.caja-acordeon-tyc .accordioncito.active:after {
+    display: none;
+}
+
+
+.caja-acordeon-tyc .accordioncito.active:before {
+    content: url(../img/iconos/flecha-up.png);
+    transform: scale(.5);
+    position: absolute;
+    left: 130px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.caja-acordeon-tyc .panel-cont {
+    background: white;
+    max-height: 0;
+    overflow: hidden;
+    -webkit-transition: 0.6s ease-in-out;
+    -o-transition: 0.6s ease-in-out;
+    transition: 0.6s ease-in-out;
+    opacity: 0;
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.caja-acordeon-tyc .panel-cont.show {
+    opacity: 1;
+    max-height: 100%;
+}
+
+.caja-acordeon-tyc .info-preguntas {
+    font-family: "SantanderText-Light", sans-serif;
+    font-weight: 100;
+}
+
+
+@media screen and (max-width: 992px) {
+
+    .caja-acordeon-tyc .accordioncito:before {
+        transform: scale(.4);
+        left: 130px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+    .caja-acordeon-tyc .accordioncito.active:before {
+        transform: scale(.4);
+        left: 130px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+}
+
+
+@media screen and (max-width: 576px) {
+
+    .caja-acordeon-tyc .seccVerMasInfo {
+        margin-top: 17.5px;
+    }
+
+}
+
+
+
+/*Sección preguntas frecuentes*/
+.seccionPreguntasFrec {
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+
+.subtitleSeccion {
+    font-family: 'Santander Headline';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 125%;
+    color: #191919;
+}
+
+
+.contenedero-acordeon {
+    width: 100%;
+    height: auto;
+    padding-left: 10%;
+    margin-bottom: 5px;
+    margin-top: 0%;
+}
+
+.caja-acordeon {
+    margin-bottom: 5px;
+}
+
+.seccionPreguntasFrec .accordioncito {
+    background: #F3F8FA;
+    color: #444;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    outline: none;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+    /*Fuente*/
+    font-family: "Santander Headline";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 125%;
+    color: #191919;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 0px 0px;
+    text-align: left;
+}
+
+.seccionPreguntasFrec .accordioncito.active,
+.seccionPreguntasFrec .accordioncito:hover {
+    background: #F3F8FA;
+}
+
+.seccionPreguntasFrec .accordioncito:before {
+    content: url(../img/iconos/ojo-activo.png);
+    transform: scale(.5);
+    position: absolute;
+    right: 40px;
+    top: 10px;
+}
+
+.seccionPreguntasFrec .accordioncito:after {
+    content: "Ver";
+    font-size: 14px;
+    color: #EC0000;
+    position: absolute;
+    right: 80px;
+    top: 20px;
+    cursor: pointer;
+}
+
+.seccionPreguntasFrec .accordioncito.active:before {
+    content: url(../img/iconos/ojo-desactivado.png);
+    transform: scale(.5);
+    position: absolute;
+    right: 40px;
+    top: 10px;
+}
+
+.seccionPreguntasFrec .accordioncito.active:after {
+    content: "Ocultar";
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.panel-cont {
+    background: #F3F8FA;
+    max-height: 0;
+    overflow: hidden;
+    -webkit-transition: 0.6s ease-in-out;
+    -o-transition: 0.6s ease-in-out;
+    transition: 0.6s ease-in-out;
+    opacity: 0;
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.panel-cont.show {
+    opacity: 1;
+    max-height: 100%;
+}
+
+.info-preguntas {
+    font-family: 'Santander Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #404040;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 8px 0px;
+}
+
+.salto-impr {
+    display: none;
+}
+
+
+@media screen and (max-width: 1200px) {
+
+    .subtitleSeccion {
+        font-size: 30px;
+        line-height: 125%;
+    }
+
+
+}
+
+
+@media screen and (max-width: 992px) {
+
+    .subtitleSeccion {
+        font-size: 20px;
+        line-height: 125%;
+    }
+
+    .seccionPreguntasFrec .txtBicolor {
+        text-align: left !important;
+    }
+
+
+}
+
+@media screen and (max-width: 576px) {
+
+
+    .contPregts {
+        margin-bottom: 3px;
+    }
+
+    .subtitleSeccion {
+        font-size: 26px;
+        line-height: 125%;
+    }
+
+
+    .colPregs {
+        margin-top: 24px;
+    }
+
+
+
+    .accordioncito {
+
+        font-size: 14px !important;
+
+    }
+
+
+    .accordioncito:before {
+        top: 4px !important;
+        transform: scale(.3) !important;
+    }
+
+    .accordioncito.active:before {
+        top: 4px !important;
+        transform: scale(.3) !important;
+    }
+
+    .seccionPreguntasFrec .accordioncito:after {
+        font-size: 12px;
+    }
+
+
+    .seccionPreguntasFrec .accordioncito.active:after {
+        font-size: 12px;
+    }
+
+
+
+
+}
+
+
+
+
+
+.seccionCarruselTarjetasInteres {
+    margin-top: 104px;
+}
+
+.subtitle2 {
+    font-family: 'Santander Headline';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 125%;
+    color: #191919;
+}
+
+
+@media screen and (max-width: 768px) {
+    .seccionCarruselTarjetasInteres .txtBicolor {
+        text-align: left;
+    }
+
+    .titlCarrusel2 {
+        margin-bottom: 100px;
+    }
+}
+
+
+
+
+.contenedorCardCarru {
+    width: 40%;
+    height: auto;
+    padding-left: 50px;
+}
+
+@media screen and (max-width: 992px) {
+
+    .contenedorCardCarru {
+        width: 80%;
+        height: auto;
+        padding-left: 50px;
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .contenedorCardCarru {
+        width: 100%;
+        padding-left: 50px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .contenedorCardCarru {
+        width: 100%;
+        padding-left: 0px;
+    }
+}
+
+/*Estilo card buscas otras opciones*/
+.contenedorTxtBuscas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 300px;
+}
+
+.contTxtBtn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.txtBuscasOtrasOpc {
+    font-family: 'Santander Headline';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 125%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #191919;
+}
+
+.btnTodasTdc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    width: 199px;
+    height: 56px;
+    border: 1px solid #EC0000;
+    box-sizing: border-box;
+    border-radius: 40px;
+    background-color: transparent;
+}
+
+.fuenteBtnTodasTdc {
+    font-family: 'Santander Text';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #EC0000;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 8px;
+}
+
+
+@media screen and (max-width: 576px) {
+    .contenedorTxtBuscas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+    }
+}
+
+
+/*Sección más beneficios*/
+.seccionMasBeneficios {
+    margin-top: 100px;
+}
+
+.pad10 {
+    padding-left: 80px;
+}
+
+.titleMasBen {
+    font-family: 'Santander Text';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: #EC0000;
+}
+
+.pBull {
+    font-family: 'Santander Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #404040;
+}
+
+.pSubtMasBenef {
+    font-family: 'Santander Text';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    color: #404040;
+}
+
+.smallMasBenef {
+    font-family: 'Santander Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #404040;
+}
+
+
+/* Menú fijo */
+.posicionBarraMenu {
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    top: 70px;
+}
+
+.icoMasBenf {
+    width: 32px;
+    height: 32px;
+    margin-right: 14.67px;
+}
+
+
+.sinBeneficio {
+    height: 1px !important;
+}
+
+@media screen and (max-width: 576px) {
+    .pad10 {
+        padding-left: 20px;
+    }
+
+    .titleMasBen {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .icoMasBenf {
+        width: 24px;
+        height: 24px;
+        margin-right: 5.67px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 576px) {
+    .pushy-open-right .cuerpoPagina {
+        margin-top: 0px !important;
+    }
+
+    .pushy-open-right .posicionBarraMenu {
+        top: -50px;
+    }
+}
+
+.divTxtConsult {
+    margin-bottom: 20px;
+}
+
+.pConsultaMasBenef {
+    font-family: 'Santander Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #191919;
+}
+
+.aLinkRed {
+    font-family: 'Santander Text';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #EC0000;
+
+}
+
+@media screen and (max-width: 576px) {
+    .seccionCarruselTarjetasInteres {
+        margin-top: 60px;
+    }
+
+    .seccionCarruselTarjetasInteres {
+        margin-bottom: 100px;
+    }
+}
+
+
+
+.seccionSuperlinea {
+    margin-top: 50px;
+}
+
+.contenedorSeccionSuperlinea {
+    width: 100%;
+    background: linear-gradient(99.18deg, #EC0000 0%, #FF1D53 86.96%);
+    padding-bottom: 50px;
+}
+
+.alineaDerecha {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.alineaIzquierda {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.h1Superlinea {
+    font-family: "Santander Headline";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 125%;
+    color: #FFFFFF;
+}
+
+.telefonito {
+    width: 100px;
+    height: 90px;
+    text-shadow: 0px 32px 32px rgba(0, 0, 0, 0.12);
+    margin-top: -25px;
+    margin-right: -50px;
+}
+
+.imgBandera {
+    width: 38px;
+    height: 38px;
+    margin-right: 20px;
+}
+
+.contenedorIcoTxt {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 60px;
+}
+
+.pDesdeMexico {
+    font-family: "Santander Headline";
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.anchorNumTelef {
+    font-family: "Santander Text";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+}
+
+.anchorNumTelef:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.contenedorIcoTxt2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.imgMundo {
+    width: 35px;
+    height: 35px;
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .pDesdeMexico {
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .contenedorIcoTxt {
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .seccionSuperlinea {
+        margin-top: 100px;
+    }
+    .alineaDerecha {
+        justify-content: center;
+    }
+    .alineaIzquierda {
+        justify-content: center;
+    }
+    .contTelefono {
+        position: relative;
+    }
+    .telefonito {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -25px;
+        margin: auto;
+    }
+    .contH1SuperLinea {
+        margin-top: 30px;
+    }
+    .contenedorIcoTxt {
+        width: 200px;
+        justify-content: flex-start;
+        margin-right: 0px;
+    }
+    .contenedorIcoTxt2 {
+        width: 200px;
+        justify-content: flex-start;
+        margin-left: 0px;
+    }
+    .contDesdeMexico {
+        margin-top: 20px;
+    }
+    .contDesdeExtranjero {
+        margin-top: 20px;
+    }
+    .pDesdeMexico {
+        font-family: 'SantanderHeadline-Light', sans-serif;
+        color: #FFFFFF;
+    }
+    .anchorNumTelef {
+        font-size: 18px;
+        line-height: 150%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .h1Superlinea {
+        font-size: 36px;
+    }
+}
+
+.contenedorNuestrosProductos {
+    margin-top: -20px !important;
+}
+
+@media screen and (max-width: 576px) {
+    .contenedorNuestrosProductos {
+        margin-bottom: 50px !important;
+    }
+    #contenedorProds {
+        padding-right: 50px !important;
+        padding-left: 50px !important;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .seccCadaVezMasCerca {
+        display: none !important;
+    }
+}
+
+
+.smallCostoYb {
+    width: 225px;
+}
+
+.icoBenef {
+    width: 48px;
+    height: 48px;
+}
+
+/* .imgLateral {
+    height: 100% !important;
+    max-height: 691px !important;
+    width: auto !important;
+} */
+
+.vertical-img {
+    width: 207px !important;
+    height: 213px !important;
+}
+
+.contenedorFijoBullets {
+    overflow: hidden !important;
+}
+
+.contenedorFijoBullets .containerCheckRed {
+    margin-bottom: 8px;
+}
+
+/* @media (max-width: 768px) {
+    .contImgLatMobil {
+        height: 100% !important;
+        max-height: 375px !important;
+        justify-content: end !important;
+    }
+
+    .imgLateralMobile {
+        width: auto !important;
+        height: 100% !important;
+        max-height: 375px !important;
+        position: absolute !important;
+        right: 0 !important;
+        margin-right: -27px !important;
+        position: relative !important;
+    }
+
+    .contenedorPsmall {
+        font-family: 'Santander Text' !important;
+        font-style: normal !important;
+        font-weight: 400 !important;
+        font-size: 18px !important;
+        line-height: 150% !important;
+        color: #191919 !important;
+    }
+
+    br.desktop {
+        display: none;
+    }
+
+    .smallCostoYb {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .imgLateralMobile {
+        margin-right: -9px !important;
+    }
+} */
+
+
+/* .imgLateral {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 462px;
+    height: 528px;
+}
+
+@media screen and (max-width: 1200px) {
+    .imgLateral {
+        width: 300px;
+        height: 476px;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    .imgLateral {
+        width: 200px;
+        height: 376px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .contImgLatMobil {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imgLateralMobile {
+        display: block;
+        width: 327px;
+        height: 295px;
+    }
+
+    .imgLateral {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .imgLateralMobile {
+        display: block;
+        width: 327px;
+        height: 295px;
+        margin-right: -35px;
+    }
+
+} */
+
+
+.seccionCarruselTarjetasInteres .contenedorTituloDetallesTDC {
+    margin-bottom: 56px;
+}
+
+.seccionCarruselTarjetasInteres .tamCard {
+    padding-top: 0;
+    padding-bottom: 0;
+    height: auto !important;
+}
+
+.seccionCarruselTarjetasInteres .flickity-prev-next-button.previous {
+    top: -91px;
+    right: 75px;
+    position: absolute;
+    left: auto;
+}
+
+.seccionCarruselTarjetasInteres .flickity-prev-next-button.next {
+    top: -91px;
+}
+
+.seccionCarruselTarjetasInteres .flickity-prev-next-button {
+    color: #EC0000;
+    background: #FFFFFF;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.12);
+    border-radius: 44px;
+    width: 32px;
+    height: 32px;
+}
+
+.seccionCarruselTarjetasInteres .flickity-prev-next-button:disabled{
+    color: #767676;
+    background: #CEDEE7;
+    border-radius: 44px;
+    width: 32px;
+    height: 32px;
+}
+
+.seccionSuperlinea {
+    margin-top: 226px;
+}
+
+.menuSuperior {
+    padding-right: 32px;
+}
+
+.contenedorOpcion {
+    margin: 0;
+    margin-left: 32px;
+}
+
+.anchorOpcMenu {
+    margin-right: 0;
+}
+
+.centraInfoBanner {
+    margin-top: 0;
+}
+
+.breadcrumb-header {
+    position: absolute;
+    top: -20px;
+}
+
+.breadcrumb-header ul {
+    padding: 0;
+    margin: 0;
+}
+
+.breadcrumb-header ul.bread li a {
+    font-family: 'Santander Micro Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #767676;
+}
+
+.txtSolicitarTarjeta:hover {
+    color: #EC0000;
+}
+
+.pBannerInfo {
+    margin-bottom: 40px;
+    height: auto;
+}
+
+.mtop {
+    margin-top: 0;
+}
+
+.txtSolicitarTarjeta.noActiva {
+    padding-bottom: 0 !important;
+}
+
+#carruselMobile .carousel-cell {
+    width: 100%;
+}
+
+#carruselMobile .contenedorMobileBenef {
+    width: 100%;
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#carruselMobile .contenedorMobileBenef .icoBenef {
+    margin-bottom: 24px;
+}
+
+#carruselMobile .contenedorMobileBenef .titleInfoBenefit {
+    margin-top: 0;
+    margin-bottom: 8px;
+    width: 100% !important;
+    max-width: 250px;
+}
+
+#carruselMobile .contenedorMobileBenef .pInfoBenefit {
+    margin: 0;
+    width: 100%;
+    max-width: 233px;
+}
+
+#carruselMobile .flickity-prev-next-button {
+    color: #EC0000;
+    background: #FFFFFF;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.12);
+    border-radius: 44px;
+    width: 32px;
+    height: 32px;
+}
+
+#carruselMobile .flickity-prev-next-button:disabled{
+    color: #767676;
+    background: #CEDEE7;
+    border-radius: 44px;
+    width: 32px;
+    height: 32px;
+}
+
+#carruselMobile .flickity-prev-next-button.previous {
+    top: 80px;
+    left: 30px;
+}
+
+#carruselMobile .flickity-prev-next-button.next {
+    top: 80px;
+    right: 30px;
+}
+
+.seccionCarruselTarjetasInteres .contenedorFijoBullets{
+    height: auto;
+}
+
+.seccionCarruselTarjetasInteres .contenedorFijoBullets .containerCheckRed {
+    font-family: 'Santander Micro Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #404040;
+}
+
+.contenedorPsmall {
+    font-family: 'Santander Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #191919;
+}
+
+.contenedorPsmall .divSmall  {
+    font-family: 'Santander Micro Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px !important;
+    line-height: 150%;
+    color: #404040;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.seccionCarruselTarjetasInteres .cuerpoPagina {
+    margin-top: 0;
+}
+
+.seccionCarruselTarjetasInteres .linkConoceMás {
+    min-width: 95px;
+}
+
+@media(max-width: 1200px) {
+    .contenedorInfoBanner {
+        margin-top: 0 !important;
+    }
+
+    .contenedorLinksYbtn {
+        margin-top: 4px;
+    }
+
+    .contenedorLinkBtn {
+        height: auto !important;
+    }
+
+    .txtIngresoMin {
+        padding-left: 0;
+    }
+
+    .txtIngresoMin .pIngMin,
+    .txtAnualidad .pIngMin {
+        margin-left: 0;
+    }
+
+    .seccionCarruselTarjetasInteres .contenedorFijoBullets {
+        margin-bottom: 8px;
+    }
+
+    .seccionCarruselTarjetasInteres .img3-sombra {
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contInfBenefit {
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 991px) {
+    .breadcrumb-header {
+        display: none;
+    }
+
+    #costosComi .smallCostoYb {
+        width: auto !important;
+    }
+
+    .seccionRequisitosCostosYdescargas {
+        margin-top: 114px !important;
+    }
+}
+
+@media(max-width: 768px) {
+    .contenedorPsmall .divSmall  {
+        font-family: 'Santander Micro Text';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px !important;
+        line-height: 150%;
+        color: #404040;
+    }
+
+    .txtBicolor {
+        text-align: left !important;
+    }
+
+    .h1BannerInfo,
+    .pBannerInfo,
+    .titleBeneficios,
+    .descripBeneficios {
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .seccionCarruselTarjetasInteres .contenedorFijoBullets .containerCheckRed {
+        font-family: 'Santander Micro Text';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        color: #404040;
+    }
+
+    .seccionBeneficiosTdcDetalle {
+        margin-top: 104px;
+    }
+
+    .seccionBeneficiosTdcDetalle .cuerpoPagina {
+        margin-top: 0;
+    }
+
+    .seccionCarruselTarjetasInteres {
+        margin-top: 0px;
+        margin-bottom: 0;
+        padding-top: 104px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .seccionCarruselTarjetasInteres .contenedorTituloDetallesTDC {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .seccionCarruselTarjetasInteres .subtitle2 {
+        font-size: 27px;
+        margin-bottom: 0px;
+    }
+
+    .seccionCarruselTarjetasInteres .titlCarrusel2 {
+        margin-bottom: 64px;
+    }
+
+    .seccionCarruselTarjetasInteres .flickity-prev-next-button {
+        top: -32px !important;
+    }
+
+    .seccionCarruselTarjetasInteres .contenedorLinksYbtn {
+        margin-top: 0;
+    }
+
+    .seccionCarruselTarjetasInteres .contenedorLinkBtn {
+        margin-top: 19px;
+        height: auto;
+    }
+
+    .seccionSuperlinea {
+        margin-top: 150px;
+    }
+
+    #costosComi div.col-12 {
+        margin-bottom: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .img-lateral {
+        margin-right: -24px !important;
+    }
+
+    .imgBannerDetalleTdc {
+        width: 100%;
+        height: auto;
+        margin-top: -12px;
+        margin-right: -14px;
+    }
+
+    .centraInfoBanner {
+        display: block;
+    }
+
+    .contenedorInfoBanner {
+        display: block; 
+        text-align: center;
+        min-height: auto;
+        margin-top: -30px !important;
+    }
+
+    #beneficiosTitleSubtitle {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .h1BannerInfo,
+    .pBannerInfo,
+    .titleBeneficios,
+    .descripBeneficios {
+        max-width: 327px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+
+    .titleBeneficios {
+        font-size: 26px;
+    }
+
+    #carruselMobile .contenedorMobileBenef .icoBenef {
+        width: 40px;
+        height: 40px;
+    }
+
+    .seccionBtnDetalleTdc {
+        margin-top: 80px !important;
+    }
+
+    .seccionRequisitosCostosYdescargas,
+    .seccionRequisitosCostosYdescargasV2 {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .seccionRequisitosCostosYdescargas .contenedorTituloDetallesTDC {
+        margin-top: 32px;
+        margin-bottom: 24px;
+    }
+
+    .seccionRequisitosCostosYdescargas .pad5 {
+        padding-left: 0;
+    }
+
+    .seccionRequisitosCostosYdescargas .smallCondicion {
+        padding-left: 10px;
+    }
+
+    .seccionRequisitosCostosYdescargas .smallCostoYbenef{
+        padding-left: 15px;
+    }
+
+    .seccionRequisitosCostosYdescargas .contBtnsDescargas {
+        padding-left: 7px !important;
+    }
+}
+
+@media(min-width: 577px) and (max-width: 767px) {
+    .imgLateral {
+        display: none;
+    }
+}

@@ -1,0 +1,1441 @@
+<!DOCTYPE html>
+
+<html class="js sizes customelements history pointerevents postmessage webgl websockets cssanimations csscolumns csscolumns-width csscolumns-span csscolumns-fill csscolumns-gap csscolumns-rule csscolumns-rulecolor csscolumns-rulestyle csscolumns-rulewidth csscolumns-breakbefore csscolumns-breakafter csscolumns-breakinside flexbox picture srcset webworkers" lang="es-MX" style="--snva-header-function-button-image: url(&#39;https://eastus.santandersandi.com/content/SANDI-MX/SANDI-FE/assets/img/ico_functions.png&#39;); --snva-faq-layer-close-img: url(&#39;https://eastus.santandersandi.com/content/SANDI-MX/SANDI-FE/assets/img/ico_close.png&#39;); --snva-animation-icon-width: 60px; --snva-animation-icon-height: 60px; --snva-animation-background-color: #f5f9fb; --snva-animation-background-color1: #1bb3bc; --snva-animation-background-color2: #84babd; --snva-animation-background-color3: #c0d1d2; --snva-color-text-primary: #ec0000; --snva-color-primary: #ec0000; --snva-color-secondary: #1bb3bc; --snva-color-disabled: #cccccc; --snva-main-app-font-size: 16px; --snva-radio-color: #1bb3bc; --snva-checkbox-color: #1bb3bc; --snva-main-app-font: SantanderTextW05-Regular; --snva-chatbot-width: 400px; --snva-chatbot-height: 100%; --snva-chatbot-position-top: 0; --snva-chatbot-position-bottom: auto; --snva-chatbot-position-right: 0; --snva-chatbot-position-left: auto; --snva-chatbot-border-radius: 0; --snva-chatbot-depth: 100; --snva-entry-point-position-top: auto; --snva-entry-point-position-bottom: 20px; --snva-entry-point-position-left: auto; --snva-entry-point-position-right: 20px; --snva-entry-point-border: none; --snva-entry-point-background-color: #ec0000; --snva-entry-point-font-color: #ffffff; --snva-entry-point-font-family: SantanderTextW05-Regular; --snva-entry-point-font-size: 16px; --snva-entry-point-width: 60px; --snva-entry-point-height: 60px; --snva-entry-point-expanded-width: 250px; --snva-entry-point-notification-background-color: #ec0000; --snva-entry-point-notification-height: 22px; --snva-entry-point-notification-width: 22px; --snva-entry-point-notification-font-color: #ffffff; --snva-entry-point-icon-color: #ffffff; --snva-entry-point-icon-width: 60px; --snva-entry-point-icon-height: 60px; --snva-entry-point-icon-margin: 0 0 0 0; --snva-entry-point-icon: https://eastus.santandersandi.com/content/SANDI-MX/SANDI-FE/assets/img/AAFF_SANDI_SYMBOL_CMYK.SVG; --snva-entry-point-icon-min-scale: 0.8; --snva-entry-point-icon-max-scale: 1; --snva-entry-point-reveal-collapse: 6s; --snva-entry-point-text-padding-left: 26px; --snva-entry-point-text-padding-bottom: 3px; --snva-entry-point-text-padding-right: 8px; --snva-entry-point-text-padding-top: 0px; --snva-entry-point-depth: 1200; --snva-entry-point-long-message-font: SantanderTextW05-Regular; --snva-entry-point-long-message-font-size: 16px; --snva-entry-point-long-message-font-color: #444444; --snva-entry-point-long-message-width: 230px; --snva-entry-point-long-message-height: 50px; --snva-entry-point-long-message-background-color: #ffffff; --snva-entry-point-long-message-animation-time: 4s; --snva-error-resource-icon-url: url(&quot;data:image/png;base64, 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&quot;); --snva-font-primary: SantanderTextW05-Regular; --snva-font-secondary: SantanderTextW05-Bold; --snva-font-tertiary: SantanderTextW05-Light; --snva-header-height: 72px; --snva-header-font-color: #ec0000; --snva-header-background-color: #FFFFFF; --snva-header-font-family: SantanderHeadlineW05-Rg; --snva-header-font-size: 22px; --snva-header-close-button-color: #ec0000; --snva-header-minimize-button-color: #ec0000; --snva-header-avatar-url: https://eastus.santandersandi.com/content/SANDI-MX/SANDI-FE/assets/img/AAFF_SANDI_SYMBOL_CMYK.SVG; --snva-header-avatar-icon-width: 36px; --snva-header-avatar-icon-boder-radius: 50px; --snva-header-icon-width: 24px; --snva-footer-border-color: #cedee7; --snva-va-framework-content-background-color: #f5f9fb; --snva-text-input-bar-background-color: #FFF; --snva-text-input-bar-font-family: SantanderHeadlineW05-Rg; --snva-text-input-bar-font-color: #444444; --snva-text-input-bar-font-size: 16px; --snva-chat-input-icon: https://eastus.santandersandi.com/content/SANDI-MX/SANDI-FE/assets/img/AAFF_SANDI_SYMBOL_CMYK.SVG; --snva-send-button-heigth: 24px; --snva-send-button-width: 24px; --snva-send-button-color: #FFFFFF; --snva-send-button-color-hover: #767676; --snva-send-button-microphone-url: url(&#39;https://eastus.santandersandi.com/content/SANDI-MX/SANDI-FE/assets/img/ico_mic.png&#39;); --snva-send-button-clip-url: url(&#39;https://eastus.santandersandi.com/content/SANDI-MX/SANDI-FE/assets/img/ico_clip.png&#39;); --snva-send-button-sandi-color: #21aebb; --snva-survey-title-font-weight: normal; --snva-survey-title-font-family: SantanderTextW05-Bold; --snva-survey-subtitle-font-family: SantanderTextW05-Bold; --snva-survey-message-subtitle-font-family: SantanderTextW05-Regular; --snva-survey-placeholder-font-family: SantanderTextW05-Light; --snva-survey-placeholder-font-weight: 300; --snva-survey-rating-icon: https://eastus.santandersandi.com/content/SANDI-MX/SANDI-FE/assets/img/survey_star.png; --snva-survey-rating-selected-icon: https://eastus.santandersandi.com/content/SANDI-MX/SANDI-FE/assets/img/survey_selected_star.png; --snva-survey-font-color: #717171; --snva-survey-header-font-color: #e40000; --snva-bubbles-bot-shadow: 1px 1px 4px 0 rgb(159 159 159 / 50%); --snva-bubbles-bot-background-color: #fcfbfb; --snva-bubbles-user-shadow: 1px 1px 4px 0 rgb(159 159 159 / 50%); --snva-bubbles-user-background-color: #deedf2; --snva-bubbles-bot-font-color: #444444; --snva-bubbles-user-font-color: #000000; --snva-no-bubbles-bot-message-bar-color: #1bb3bc; --snva-no-bubbles-user-message-bar-color: #cc0000; --snva-no-bubbles-bot-background-color: #f7f7f7; --snva-no-bubbles-user-background-color: #FFFFFF; --snva-button-primary-background-color: #ec0000; --snva-button-primary-font-color: #ffffff; --snva-button-primary-border-color: #ec0000; --snva-button-primary-hover-background-color: #cc0000; --snva-button-primary-hover-font-color: #ffffff; --snva-button-primary-hover-border-color: #cc0000; --snva-button-secondary-height: 32px; --snva-button-secondary-background-color: #137e84; --snva-button-secondary-font-color: #ffffff; --snva-button-secondary-border-color: #137e84; --snva-button-secondary-hover-background-color: #ffffff; --snva-button-secondary-hover-font-color: #137e84; --snva-button-secondary-hover-border-color: #137e84; --snva-button-tertiary-background-color: transparent; --snva-button-tertiary-font-color: #ec0000; --snva-button-tertiary-border-color: transparent; --snva-button-tertiary-hover-background-color: #ec0000; --snva-button-tertiary-hover-font-color: #ffffff; --snva-button-tertiary-hover-border-color: #ec0000; --snva-button-disabled-background-color: #ffffff; --snva-button-font-family: SantanderTextW05-Regular; --snva-button-font-weight: normal; --snva-button-font-size: 16px; --snva-button-border-radius: 50px; --snva-button-height: 44px; --snva-faq-card-background-color: #ffffff; --snva-faq-card-border-color: #cedee7; --snva-faq-card-header-font-color: #ec0000; --snva-faq-card-header-font-family: SantanderTextW05-Bold; --snva-faq-card-header-font-size: 18px; --snva-faq-card-content-font-family: SantanderTextW05-Light; --snva-faq-card-content-font-size: 16px; --snva-faq-card-content-font-color: #444444; --snva-confirmation-card-title-font-family: SantanderTextW05-Bold; --snva-confirmation-card-subtitle-font-family: SantanderTextW05-Light; --snva-confirmation-card-general1-font-family: SantanderTextW05-Regular; --snva-confirmation-card-general2-font-family: SantanderTextW05-Light; --snva-carousel-header-font-family: SantanderTextW05-Bold; --snva-carousel-header-font-size: 18px; --snva-carousel-content-font-family: SantanderTextW05-Light; --snva-carousel-content-font-size: 16px; --snva-layer-content-background-color: #f5f9fb; --snva-layer-card-header-font-family: SantanderTextW05-Bold; --snva-layer-card-header-font-size: 18px; --snva-layer-card-header-font-color: #ec0000; --snva-hyperlink-color: #137e84; --snva-hyperlink-link-color: #137e84; --snva-hyperlink-active-color: #137e84; --snva-hyperlink-visited-color: #137e84; --snva-hyperlink-hover-color: #137e84; --snva-voice-input-close-button-color: #ec0000; --snva-assessments-shadow: 0 2px 3px 0 rgb(204 204 204 / 70%); --snva-assessments-color: #767676; --snva-assessments-hover-color: #ec0000; --snva-fallback-fail-background: #d8d8d8; --snva-fallback-fail-color: #444444; --snva-product-success-label-color: #3a8340; --snva-product-locked-label-color: #cc0000; --snva-product-temporary-locked-label-color: #946f00; --snva-datepicker-header-text-color: #ec0000; --snva-datepicker-header-border-color: #cedee7; --snva-datepicker-footer-border-color: #cedee7; --snva-datepicker-font-family: SantanderTextW05-Regular; --snva-datepicker-today-color: #00b9c0; --snva-datepicker-range-font-color: #00b6be; --snva-datepicker-range-selected-color: #ececec; --snva-datepicker-day-selected-color: #00b9c0; --snva-datepicker-day-selected-font-color: #ffffff; --snva-datepicker-year-selected-color: #00b9c0; --snva-datepicker-year-selected-hover-color: #00b9c070; --snva-datepicker-year-selected-font-color: #ffffff; --snva-datepicker-year-scroll-color: #ec0000; --snva-datepicker-arrows-color: #ec0000; --snva-datepicker-button-background-color: #ec0000; --snva-datepicker-button-font-color: #ffffff; --snva-datepicker-button-border-color: #ec0000; --snva-datepicker-button-hover-background-color: #cc0000; --snva-datepicker-button-hover-font-color: #ffffff; --snva-datepicker-button-hover-border-color: #cc0000; --snva-datepicker-button-disabled-background-color: #f6f6f6; --snva-datepicker-button-disabled-font-color: #bcc2c1; --snva-datepicker-button-disabled-border-color: #bcc2c1; --snva-entry-point-reveal-mobile-dismiss: 6s; --snva-entry-point-border-color: #ec0000;"><head class="at-element-marker"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    
+    <title>Banco Santander | Seguimiento Transaccional</title>
+    <meta name="description" content="Puede verificar la transferencia para asegurarse de que los fondos sean reflejados correctamente.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="canonical" href="https://www.santander.com.mx/personas/tarjetas-de-credito/tarjeta-virtual.html">
+    <meta name="robots" content="index, follow">
+
+ 
+
+    <!-- Otras secciones -->
+    <link rel="stylesheet" href="./Tarjeta de crédito Digital _ La opción más segura_files/main.css">
+    <link rel="stylesheet" href="./Tarjeta de crédito Digital _ La opción más segura_files/home-min.css">
+    <link rel="stylesheet" href="./Tarjeta de crédito Digital _ La opción más segura_files/ajustes-index.css">
+    <link rel="stylesheet" href="./Tarjeta de crédito Digital _ La opción más segura_files/submenu.css">
+    <link rel="stylesheet" href="./Tarjeta de crédito Digital _ La opción más segura_files/pasos.css">
+    <link rel="stylesheet" href="./Tarjeta de crédito Digital _ La opción más segura_files/style.css">
+    <link rel="stylesheet" href="./Tarjeta de crédito Digital _ La opción más segura_files/style(1).css">
+    <link rel="stylesheet" href="./Tarjeta de crédito Digital _ La opción más segura_files/margen.css">
+    <link rel="stylesheet" href="./Tarjeta de crédito Digital _ La opción más segura_files/header-image.css">
+    <link rel="stylesheet" href="./Tarjeta de crédito Digital _ La opción más segura_files/preguntas-frecuentes.css">
+    <link rel="stylesheet" href="./Tarjeta de crédito Digital _ La opción más segura_files/style-tarjeta-virtual.css">
+    <link rel="stylesheet" href="./Tarjeta de crédito Digital _ La opción más segura_files/ajuste-estilo.css">
+
+    <!--Estilos footer generico-->
+    <link rel="stylesheet" href="./Tarjeta de crédito Digital _ La opción más segura_files/footer.css">
+
+
+     
+    <script type="text/javascript">
+        if (window.location.protocol == "http:") {
+            var restOfUrl = window.location.href.substr(5);
+            
+        }
+        </script>
+  
+  
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+          <script src="/js/location.js"></script>
+       
+      
+    
+    <!--Estilos para imagen lateral web y mobile free-->
+    <style>
+        .imgLateral {
+            width: 384px !important;
+            height: 590px !important;
+        }
+
+        .section-tarjeta-virtual p.legales {
+            font-family: 'Santander Micro Text';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 150%;
+            color: #595959;
+            margin: 0;
+        }
+
+        .section-tarjeta-virtual p.legales a {
+            color: #595959;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        @media screen and (max-width: 1200px) {
+            .imgLateral {
+                width: 300px !important;
+                height: 476px !important;
+            }
+
+        }
+
+        @media screen and (max-width: 992px) {
+            .imgLateral {
+                width: 200px !important;
+                height: 376px !important;
+            }
+        }
+
+        @media screen and (max-width: 767px) {
+            .section-tarjeta-virtual p.legales {
+                margin-bottom: 24px;
+                text-align: left;
+            }
+        }
+
+        @media screen and (max-width: 576px) {
+            .imgLateralMobile {
+                display: block;
+                width: 327px !important;
+                height: 295px !important;
+                margin-right: -10px;
+            }
+
+            .imgLateral {
+                display: none;
+            }
+
+        }
+        .section-header .h1BannerInfo {
+    margin-top: 1cm;
+}
+.btn-primary {
+    color: #FFFFFF;
+    background-color: #EC0000;
+    background-image: linear-gradient(99.18deg, #EC0000 0%, #FF1D53 86.96%) !important;
+    border-color: #EC0000;
+    border-radius: 44px;
+}
+
+.btn-siguiente {
+    text-align: center;
+    padding-top: 15px;
+}
+
+    </style>
+
+<body data-aos-easing="ease-in-out-sine" data-aos-duration="400" data-aos-delay="0">
+   
+    <header class="site-header push cro-sticky" style="z-index: 999;">
+        
+        
+            <div class="logo-santander">
+                <img src="./Tarjeta de crédito Digital _ La opción más segura_files/logo_santander_rojo.svg" alt="Descripción de la imagen" style="width: 100px; height: auto;">
+                <a href="https://www.santander.com.mx/index.html"></a>
+               
+            </div>
+
+            <div class="cliente__mobile">
+                <a  class="btn--hazteCliente d-md-block d-lg-none" href="https://www.santander.com.mx/personas/santander-digital/hazte-cliente.html">Hazte cliente</a>
+                <button id="menu" class="menu-btn d-md-block d-lg-none"></button>
+            </div>
+            <div id="header"><link rel="stylesheet" href="./Tarjeta de crédito Digital _ La opción más segura_files/buscador-beta.css">
+
+
+<style>
+    .submenu--light {
+        color: #6d7278 !important
+    }
+
+    @media only screen and (min-width: 1200px) {
+        header .logo-santander {
+            margin: 1.3em 0.9em
+        }
+    }
+
+    @media only screen and (min-width: 1441px) {
+        header .logo-santander {
+            margin: 1.3em 1em
+        }
+    }
+
+    @media only screen and (min-width: 992px) {
+        .site-header>.container {
+            max-width: 100% !important
+        }
+    }
+
+    @media only screen and (min-width: 1200px) {
+        .site-header>.container {
+            max-width: 1500px !important
+        }
+    }
+
+    @media only screen and (min-width: 1441px) {
+        .site-header>.container {
+            max-width: 95% !important
+        }
+    }
+
+    @media only screen and (min-width: 992px) {
+
+        nav.menuweb>.opciones-menu>div>a,
+        nav.menuweb .flexNav>div>a {
+            font-size: 0.98rem
+        }
+    }
+
+    @media only screen and (min-width: 1060px) {
+
+        nav.menuweb>.opciones-menu>div>a,
+        nav.menuweb .flexNav>div>a {
+            font-size: 1.125rem
+        }
+    }
+
+    @media only screen and (min-width: 1110px) {
+
+        nav.menuweb>.opciones-menu>div>a,
+        nav.menuweb .flexNav>div>a {
+            font-size: 1.25rem
+        }
+    }
+
+    @media only screen and (min-width: 1241px) {
+
+        nav.menuweb>.opciones-menu>div>a,
+        nav.menuweb .flexNav>div>a {
+            font-size: 1.125rem
+        }
+    }
+
+    @media only screen and (min-width: 1540px) {
+
+        nav.menuweb>.opciones-menu>div>a,
+        nav.menuweb .flexNav>div>a {
+            font-size: 1.25rem
+        }
+    }
+
+    @media only screen and (min-width: 992px) {
+        nav.menuweb .flexNav>div .icoAyuda {
+            width: 80%
+        }
+    }
+
+    @media only screen and (min-width: 1200px) {
+        nav.menuweb .flexNav>div .icoAyuda {
+            width: auto
+        }
+    }
+
+    @media only screen and (max-width: 1305px) {
+        nav.menuweb .flexNav>div.int:last-child {
+            width: 100px !important
+        }
+    }
+
+    @media only screen and (max-width: 1200px) {
+
+        header .bloque-search-web-interior .inbenta-typeahead .inb-tt-input,
+        header .bloque-search-web-interior .buscador {
+            width: 132px !important
+        }
+    }
+
+    @media only screen and (min-width: 1441px) {
+
+        header .bloque-search-web-interior .inbenta-typeahead .inb-tt-input,
+        header .bloque-search-web-interior .buscador {
+            padding: 0.8em 1em;
+            width: 200px
+        }
+    }
+
+    @media only screen and (min-width: 1441px) {
+        header .bloque-search-web-interior {
+            min-width: 280px
+        }
+    }
+
+    nav.menuweb>.opciones-menu>div .ico-cajeros,
+    nav.menuweb .flexNav>div .ico-cajeros {
+        background: url(/personas/assets/img/iconos/ico-cajeros.png) no-repeat;
+        width: 24px;
+        height: 24px;
+        background-size: 100%;
+        margin-right: 20px;
+        margin-top: 5px;
+    }
+
+    nav.menuweb>.opciones-menu>div .ico-unique-rewadrs,
+    nav.menuweb .flexNav>div .ico-unique-rewadrs {
+        background: url(/personas/assets/img/iconos/icon_star.svg) no-repeat;
+        width: 24px;
+        height: 24px;
+        background-size: 100%;
+        margin-right: 20px;
+        margin-top: 5px;
+    }
+</style>
+
+
+<style>
+    #opcBusc {
+        margin-left: 10px;
+    }
+
+    .contenedor--hazteCliente {
+        margin-left: 0px;
+    }
+
+
+    header .search {
+        width: 50px;
+        height: 50px;
+        background-position: 0%;
+        cursor: pointer;
+        border: 0;
+    }
+
+    #inbenta-ico {
+        width: 100px;
+    }
+
+    #inbenta-autocompleter {
+        margin-right: 20px;
+    }
+
+    nav.menuweb>.opciones-menu>div .ico10,
+    nav.menuweb .flexNav>div .ico10 {
+        background: url("/personas/assets/img/iconos/icon-promocion.png") no-repeat center center;
+        width: 24px;
+        height: 29px;
+        margin-right: 20px;
+        background-size: contain;
+    }
+
+
+    @media screen and (max-width: 1200px) {
+        .input-buscador {
+            width: 150px !important;
+            padding-left: 3%;
+        }
+
+        nav.menuweb>.opciones-menu>div>a>span,
+        nav.menuweb .flexNav>div>a>span {
+            font-size: 13px !important;
+        }
+
+        .opcion-navbar-actualizada {
+            font-size: 13px;
+            margin-left: -15px;
+        }
+
+
+
+
+        .icono-opcion-navbar-actualizada {
+            width: 20px;
+            height: 20px;
+        }
+
+        header .search {
+            background-size: 20% !important;
+        }
+
+        #inbenta-form {
+
+            margin: 0px !important;
+        }
+
+    }
+
+    @media screen and (max-width: 1100px) {
+        .input-buscador {
+            width: 130px !important;
+            padding-left: 3%;
+            font-size: 11px !important;
+        }
+
+        nav.menuweb>.opciones-menu>div>a>span,
+        nav.menuweb .flexNav>div>a>span {
+            font-size: 11px !important;
+        }
+
+        .opcion-navbar-actualizada {
+            font-size: 11px;
+            margin-left: -15px;
+        }
+
+        .anchor-link-opc {
+            width: 100px;
+            text-decoration: none;
+            margin-right: 10px !important;
+        }
+
+        #anchTutoriales {
+            margin-right: 20px !important;
+        }
+
+        .contenedor-opcion-encuentrame {
+            width: 100px;
+            margin-right: 5px;
+        }
+
+    }
+
+
+    @media screen and (max-width: 1000px) {
+        .input-buscador {
+            width: 110px !important;
+            padding-left: 3%;
+            font-size: 10px;
+        }
+
+        nav.menuweb>.opciones-menu>div>a>span,
+        nav.menuweb .flexNav>div>a>span {
+            font-size: 11px !important;
+        }
+
+        .opcion-navbar-actualizada {
+            font-size: 11px;
+            margin-left: -15px;
+        }
+
+        .anchor-link-opc {
+            width: 100px;
+            text-decoration: none;
+            margin-right: 10px !important;
+        }
+
+        #anchTutoriales {
+            margin-right: 20px !important;
+        }
+
+        .contenedor-opcion-encuentrame {
+            width: 100px;
+            margin-right: 5px;
+        }
+
+    }
+</style>
+
+<nav class="menuweb int d-none d-sm-none d-md-none d-lg-block">
+    <div class="opciones-menu">
+        <div>
+            
+            <a href="https://www.santander.com.mx/" class="submenu active" ><span>Personas</span></a>
+            <div class="submenu-header">
+                <div class="container container-header">
+                    <ul class="opciones-submenu">
+                        <li class="categoria">
+                            <a href="https://www.santander.com.mx/personas/tarjetas-de-credito.html" class="subcat-titulo" >
+                                <i class="ico1"></i> Tarjetas de crédito
+                                <span>Recompensas, viajes, sin comisión e intereses bajos</span>
+                            </a>
+                          
+                            <a href="https://www.santander.com.mx/personas/creditos-hipotecarios.html" class="subcat-titulo">
+                                <i class="ico3"></i> Crédito hipotecario
+                                <span>Para tu casa nueva, y más beneficios</span>
+                            </a>
+                            <a href="https://www.santander.com.mx/personas/credito-automotriz.html" class="subcat-titulo">
+                                <i class="ico4"></i> Crédito automotriz
+                                <span>Crédito para adquirir autos nuevos y seminuevos</span>
+                            </a>
+
+                            <a href="https://www.uniquerewards.santander.com.mx/" target="_blank" class="subcat-titulo">
+                                <i class="ico-unique-rewadrs"></i> Unique Rewards
+                                <span>Descubre las experiencias y beneficios exclusivos</span>
+                            </a>
+                        </li>
+                        <li class="categoria">
+                            <a href="https://www.santander.com.mx/personas/cuentas.html" class="subcat-titulo">
+                                <i class="ico5"></i> Cuentas
+                                <span>Cuentas de cheques nómina y sus beneficios</span>
+                            </a>
+                            <a href="https://www.santander.com.mx/personas/inversiones.html" class="subcat-titulo">
+                                <i class="ico7"></i> Inversiones
+                                <span>Plazo, fondos de inversión y productos diversificados</span>
+                            </a>
+                            <a href="https://www.santander.com.mx/personas/seguros.html" class="subcat-titulo" >
+                                <i class="ico6"></i> Seguros
+                                <span>Vida, hogar, salud y auto</span>
+                            </a>
+
+                            
+                            <a href="https://www.santander.com.mx/promociones/" class="subcat-titulo">
+                                <i class="ico10"></i> Promociones Santander 
+                                <span style="width: max-content;">Beneficios y promociones</span>
+                            </a>
+
+                            
+                        </li>
+                        <li class="categoria">
+                            <a href="https://www.santander.com.mx/bp/home/" class="subcat-titulo" >
+                                Private Banking
+                                <span>Productos y Servicios de inversión para su patrimonio.</span>
+                            </a>
+                            <a href="https://www.santander.com.mx/personas/select/" class="cat-titulo" >
+                                Select
+                                <span>Vive la banca a través de un modelo de atención diferenciado</span>
+                            </a>
+                            <a href="http://www.santanderuniversidades.com.mx/" class="cat-titulo">
+                                Universidades
+                                <span>Iniciativa, desarrollo de proyectos, progreso científico y tecnológico</span>
+                            </a>
+                            <a href="https://www.santander.com.mx/personas/colectivos/" class="cat-titulo">
+                                Colectivos
+                                <span>Ofertas, beneficios y experiencias exclusivas</span>
+                            </a>
+                            <a href="https://www.santander.com.mx/personas/cuentas/trae-tu-nomina-no-cliente.html" class="cat-titulo">
+                                Cambia tu nómina
+                                <span>Conoce los beneficios de traer tu nómina a Santander</span>
+                            </a>
+                        </li>
+                        <li class="categoria">
+                            <a href="https://www.santander.com.mx/promociones/terminos-y-condiciones.html" class="cat-titulo">
+                                Términos y condiciones
+                                <span>Conoce las vigencias, términos y condiciones de las promociones de Banco
+                                    Santander</span>
+                            </a>
+                            
+                            <div class="bannHead">
+                                <a href="https://www.santander.com.mx/MiSitioPrivado/" >
+                                    <img src="./Tarjeta de crédito Digital _ La opción más segura_files/banner_supernet_header.png" alt="">
+                                </a>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div>
+            <a href="https://www.santander.com.mx/pyme/" class="submenu" >
+                <span>PyMes</span>
+            </a>
+        </div>
+        <div>
+            <a href="https://www.santander.com.mx/bei/home/" class="submenu"  target="_blank">
+                <span>Empresas y Gobierno</span>
+            </a>
+
+            <div class="submenu-header">
+                <div class="container">
+                    <ul class="opciones-submenu">
+                        <li class="categoria">
+                            <a href="https://www.santander.com.mx/bei/home/" class="subcat-titulo"target="_blank">
+                                Empresas
+                            </a>
+                        </li>
+                        <li class="categoria">
+                            <a href="https://www.santander.com.mx/bei/home/instituciones/index.html" class="subcat-titulo"  target="_blank">
+                                Gobierno
+                            </a>
+                        </li>
+                        <li class="categoria">
+                        </li>
+                        <li class="categoria">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div>
+            <a href="https://www.santander.com.mx/nearshoring.html" class="submenu" >
+                <span>Nearshoring</span>
+            </a>
+        </div>
+        
+
+
+    </div>
+
+    <div class="contenedor-descripciones-banner">
+        <a class="anchor-link-opc" href="https://branchlocator.santander.com/?view=mx&amp;defaultLanguage=es" target="_blank">
+            <div class="contenedor-opcion-encuentrame">
+                <img class="icono-opcion-navbar-actualizada" src="./Tarjeta de crédito Digital _ La opción más segura_files/icon_encuentrame.svg">
+                <div class="opcion-navbar-actualizada" title="Encuéntrame">Encuéntrame</div>
+            </div>
+        </a>
+
+
+        <a class="btn-buscar">
+            <img src="./Tarjeta de crédito Digital _ La opción más segura_files/search_icon.svg">
+            Buscar
+        </a>
+
+        <div>
+            <div class="contenedor--hazteCliente">
+                <a id="cambiante"  class="boton-activo" href="https://www.santander.com.mx/personas/santander-digital/hazte-cliente.html">Hazte cliente</a>
+            </div>
+
+        </div>
+    </div>
+</nav>
+
+<div class="modal fade" id="modalResultadoBusqueda" tabindex="-1" aria-labelledby="modalResultadoBusquedaLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-title">
+            <h5 class="titulo-modal">Resultados encontrados:</h5>
+            <button type="button" class="close" aria-label="Close">
+                <img src="./Tarjeta de crédito Digital _ La opción más segura_files/icon_close.png">
+            </button>
+        </div>
+        <div class="modal-body section-busqueda">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <form>
+                            <div class="container-resultados-encontrados">
+                                <p class="txtResultadosRelacionados">Resultados relacionados con: <span></span></p>
+                                <p class="txtTotalRegistros">0 registros</p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 resultado"></div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<script src="./Tarjeta de crédito Digital _ La opción más segura_files/buscador-beta.js.descargar"></script>
+<script>
+    $(function () {
+        $('section').click(function () {
+            $("#inbenta-autocompleter").css("display", "none");
+        });
+
+        let html = `
+        <div class="container-buscador">
+            <div class="container-buscador-form">
+                <div class="container">
+                    <form class="form-buscador" action="/buscador.html" method="get">
+                        <div class="input-group">
+                            <div class="input-group-prepend pe-1">
+                                <img class="input-group-text" src="/personas/assets/img/iconos/search_icon.svg">
+                            </div>
+                            <input name="search" type="text" class="form-control" placeholder="Buscar en santander.com.mx" autocomplete="off">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="container-buscador-space"></div>
+        </div>`;
+
+
+        $("header.site-header").after(html);
+    })
+</script>
+
+</div>
+        </div>
+    </header>
+        <div class="container-buscador">
+            <div class="container-buscador-form">
+                <div class="container">
+                    <form class="form-buscador" action="https://www.santander.com.mx/buscador.html" method="get">
+                        <div class="input-group">
+                            <div class="input-group-prepend pe-1">
+                                <img class="input-group-text" src="./Tarjeta de crédito Digital _ La opción más segura_files/search_icon.svg">
+                            </div>
+                            <input name="search" type="text" class="form-control" placeholder="Buscar en santander.com.mx" autocomplete="off">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="container-buscador-space"></div>
+        </div>
+
+    <!-- Pushy Menu -->
+    <nav id="pushMenu" class="pushy pushy-right" data-focus="#first-link"><style>
+    .pushy-content .accordion .ico-cajeros {
+        background: url(/personas/assets/img/iconos/ico-cajeros.png) no-repeat;
+        background-size: 100%;
+        width: 24px;
+        height: 24px;
+        margin-right: 20px;
+        margin-top: 5px;
+    }
+
+    .pushy-content .accordion .ico11 {
+        background: url("/personas/assets/img/iconos/icon-promocion.png") no-repeat center center;
+        width: 24px;
+        height: 29px;
+        margin-right: 20px;
+        background-size: contain;
+    }
+
+    .pushy-content .form-buscador {
+        width: 100%;
+        padding: 12pt 17pt;
+    }
+
+    .pushy-content .form-buscador .form-control {
+        border-radius: 12px;
+        border: 1px solid #999;
+        border-left: 0;
+        background-color: #FFF;
+        color: #191919;
+        font-family: 'Santander Text';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+    }
+
+    .pushy-content .form-buscador .form-control:focus {
+        outline: 0;
+        box-shadow: none;
+        border-radius: 12px;
+        border: 2px solid #595959;
+        border-left: 0;
+    }
+
+    .pushy-content .form-buscador .input-group-prepend:has( + .form-control:focus) {
+        border: 2px solid #595959;
+        border-right: 0;
+    }
+
+    .pushy-content .form-buscador .input-group-prepend {
+        display: flex;
+        align-items: center;
+        padding-left: 16px;
+        border-top-left-radius: 12px;
+        border-bottom-left-radius: 12px;
+        border: 1px solid #999;
+        border-right: 0;
+    }
+
+    .pushy-content .form-buscador img {
+        width: 20px;
+        height: 20px;
+        padding: 0;
+        background-color: #FFF;
+        border: 0;
+    }
+</style>
+<div class="pushy-content">
+    <form class="form-buscador" method="get" action="https://www.santander.com.mx/personas/tarjetas-de-credito/tarjeta-virtual.html">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <img class="input-group-text" src="./Tarjeta de crédito Digital _ La opción más segura_files/icon_buscar.png">
+            </div>
+            <input name="search" type="text" class="form-control" placeholder="Buscar..." autocomplete="off">
+        </div>
+    </form>
+
+    
+
+    <div class="accordion">Personas</div>
+    <div class="panel sub">
+        <div class="accordion link">
+            <a href="https://www.santander.com.mx/personas/tarjetas-de-credito.html"> <i class="ico1"></i> Tarjeta de crédito</a>
+        </div>
+      
+        <div class="accordion link">
+            <a href="https://www.santander.com.mx/personas/creditos-personales.html"> <i class="ico2"></i> Crédito personal</a>
+        </div>
+       
+        
+        <div class="accordion link">
+            <a href="https://www.santander.com.mx/personas/creditos-hipotecarios.html"> <i class="ico3"></i> Crédito hipotecario</a>
+        </div>
+       
+        <div class="accordion link"><a href="https://www.santander.com.mx/personas/credito-automotriz.html"><i class="ico4"></i> Crédito automotriz</a></div>
+        
+
+        <div class="accordion link"><a href="https://www.santander.com.mx/personas/cuentas.html"><i class="ico5"></i> Cuentas</a></div>
+       
+        <div class="accordion link"><a href="https://www.santander.com.mx/personas/inversiones.html"><i class="ico7"></i> Inversiones</a></div>
+       
+        <div class="accordion link"><a href="https://www.santander.com.mx/personas/seguros.html"><i class="ico6"></i> Seguros</a></div>
+        
+        <div class="accordion link"><a href="https://www.santander.com.mx/personas/santander-digital.html"><i class="ico8"></i> Santander digital</a></div>
+        <div class="accordion link"><a href="https://www.santander.com.mx/promociones/"><i class="ico11"></i> Promociones Santander</a></div>
+        <div class="accordion link"><a href="https://www.santander.com.mx/personas/cajeros-automaticos.html"><i class="ico-cajeros"></i> Cajero Automático</a></div>
+       
+        <a href="https://www.santander.com.mx/personas/regulacion/tramite-por-defuncion.html" class="link-black">Regulación</a>
+        <a href="https://www.santander.com.mx/bp/home/" class="link-black">Private Banking</a>
+        <a href="https://www.santander.com.mx/personas/select/" class="link-black">Select</a>
+        <a href="http://www.santanderuniversidades.com.mx/site/index.html" class="link-black">Universidades</a>
+        <a href="https://www.santander.com.mx/personas/colectivos/" class="link-black">Colectivos</a>
+        <a href="https://www.santander.com.mx/personas/cuentas/trae-tu-nomina-no-cliente.html" class="link-black"> Cambia tu nómina</a>
+        <a href="https://www.santander.com.mx/promociones/terminos-y-condiciones.html" class="link-black">  Términos y condiciones</a>
+
+    </div>
+    <div class="accordion link"><a href="https://www.santander.com.mx/pyme/"> PyMes</a></div>
+   
+    <div class="accordion link"><a href="https://www.santander.com.mx/bei/home.html"> Empresas y Gobierno</a></div>
+    <div class="accordion link"><a href="https://www.santander.com.mx/nearshoring.html"> Nearshoring</a></div>
+    <div class="accordion">Acerca del Banco</div>
+    <div class="panel sub">
+        <div class="accordion link"><a href="https://www.santander.com.mx/ir/home/">Inversionistas</a></div>
+        <div class="accordion link"><a href="https://www.santander.com.mx/ceb/sala_prensa_2022.html">Sala de comunicación</a></div>
+        <div class="accordion link"><a href="https://www.santander.com.mx/personas/acerca-del-banco/responsabilidad-social.html">Banca Responsable</a></div>
+        <div class="accordion link"><a href="https://www.santander.com.mx/personas/santander-digital/bolsa-de-trabajo.html">Bolsa de Trabajo</a></div>
+        <div class="accordion link"><a href="https://www.santander.com.mx/educacion-financiera/">Educación Financiera</a></div>
+        <div class="accordion link"><a href="https://www.santander.com.mx/obras-emblematicas/mural-esp.html" target="_blank">Obra Santa Fe</a></div>
+        <div class="accordion link"><a href="https://www.santander.com.mx/obras-emblematicas/qro-esp.html" target="_blank">Obra Querétaro</a></div>
+    </div>
+</div>
+
+
+<div class="bloqueToolsHelp">
+    <div style="width: 100%; 
+                height: auto;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;">
+        <a  target="_blank" href="https://branchlocator.santander.com/?view=mx&amp;defaultLanguage=es" class="link-encuentra">Encuéntrame</a>
+        <a href="https://www.santander.com.mx/personas/santander-digital/tutoriales.html" >
+            <img style="width: 26px;margin: 0 auto 5pt;" src="./Tarjeta de crédito Digital _ La opción más segura_files/icon-play-navbar.svg" alt="">
+            <p style="margin: 0px;">Tutoriales</p>
+        </a>
+    </div>
+</div></nav>
+
+    <!-- Site Overlay -->
+    <div class="site-overlay"></div>
+
+    <div class="push">
+
+        <!--Seccion Menú Superior-->
+        <section class="posicionBarraMenu">
+            <div class="row">
+                <div class="col-12">
+                    <div class="barraMenuSuperior">
+                        <div class="container menuSuperior scrollMenuRivs">
+
+                          <div class="contenedorOpcion txtOpc itemRivs d-none d-md-flex">
+                            <a class="anchorOpcMenu noActiva" href="https://www.santander.com.mx/personas/tarjetas-de-credito/">
+                              <img class="icoTarjeta" src="./Tarjeta de crédito Digital _ La opción más segura_files/ico-tarjeta.png" alt="">
+                            </a>
+                          </div>
+                          
+                            <div class="contenedorOpcion txtOpc itemRivs">
+                                <a class="anchorOpcMenu noActiva" href="https://www.santander.com.mx/personas/tarjetas-de-credito/">
+                                  Tarjetas de crédito
+                                </a>
+                            </div>
+
+                            <div class="contenedorOpcion txtOpc itemRivs">
+                                <a class="anchorOpcMenu noActiva" href="https://www.santander.com.mx/personas/tarjetas-de-credito/faqs.html">
+                                  Usando tu tarjeta
+                                </a>
+                            </div>
+                            <div class="contenedorOpcion txtOpc itemRivs">
+                                <a class="anchorOpcMenu noActiva" href="https://www.santander.com.mx/personas/tarjetas-de-credito/otros-sitios.html">
+                                  Otros sitios
+                                </a>
+                            </div>
+                            <div class="contenedorOpcion txtOpc itemRivs">
+                                <a class="anchorOpcMenu noActiva" href="https://www.santander.com.mx/personas/tarjetas-de-credito/pay-santander.html">
+                                  Pay Santander
+                                </a>
+                            </div>
+
+                            <div class="contenedorOpcion txtOpc itemRivs">
+                              <a class="anchorOpcMenu noActiva" href="https://www.santander.com.mx/promociones/buen-fin/">
+                                Buen Fin
+                              </a>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+       
+
+        
+        <section class="section-header">
+            <div class="container-fluid contenedor">
+              <div class="row">
+
+                <div id="root-tplSeguridad-ICabeceraPrincipal-cabSuperiorPrincipal"
+                class="inline-block">
+    
+                <div id="root-tplSeguridad-ICabeceraPrincipal-cabSuperiorTitulo"
+                  class="col-md-7 col-lg-8 space-title">
+                  <h2 class="h1BannerInfo">Bienvenido
+                    a Banca Electrónica Transaccional</h2>
+                </div>
+    
+    
+                <div id="root-tplSeguridad-ICabeceraPrincipal-cabSuperiorBotonera"
+                  class="col-xs-6 col-sm-5 col-md-4 tools-app space-title">
+                  <span id="root-tplSeguridad-ICabeceraPrincipal-iconHeaderHelp"
+                    class="pull-right icon-boton-info" data-toggle="modal"></span>
+    
+                </div>
+              </div>
+
+
+                  <div
+            id="root-tplSeguridad-cabeceraSecundaria-seguridadCabSuperiorSecundaria"
+            class="header-auxiliar col-md-12 col-sm-12 col-xs-12 padding-bottom-5">
+            <div
+              id="root-tplSeguridad-cabeceraSecundaria-seguridadCabSuperiorSecundariaIzquierda"
+              class="col-md-10 col-sm-9 col-xs-12 padding-left-0 padding-right-0">
+              <h3 id="root-tplSeguridad-cabeceraSecundaria-seguridadCabSuperiorSecundariaSubtitulo"
+                class="ellipsis">   <span id="root-tplSeguridad-cabeceraSecundaria-headingSuperiorSecundarioDescripcion" class="ellipsis padding-top-7">Por favor, conceda los permisos
+                  de ubicación necesarios para verificar la
+                  transacción.</span></h3>
+            </div>
+            <div
+              id="root-tplSeguridad-cabeceraSecundaria-seguridadCabSuperiorSecundariaDerecha"
+              class="col-md-2 col-lg-2 steps"></div>
+          </div>
+<p></p>
+<p></p>
+<p></p> &nbsp;&nbsp;&nbsp;&nbsp;
+<p></p> &nbsp;&nbsp;&nbsp;&nbsp; 
+
+                <div class="col-12 section-tarjeta-virtual">
+                    <div class="caja">
+
+                      <p>
+                        Al otorgar los permisos necesarios, contribuyes a protegerte contra posibles fraudes y transferencias Fantasmas. En Santander, nos comprometemos a salvaguardar tus datos de manera segura y confidencial. Para obtener más información, te invitamos a visitar nuestra página web.
+                        <a href="https://www.santander.com.mx/">www.santander.com.mx</a>
+                      </p>
+
+                      
+
+                      <div
+                      id="root-tplSeguridad-seguridadGapBody-containerBtnSiguiente"
+                      class="form-group btn-siguiente">
+                      
+                    
+                  <body onload="information();">
+                   
+                    <div><button 
+                        id="change root-tplSeguridad-seguridadGapBody-botonSiguiente " class=" btn btn-primary button " type="button" style="width: 200px; height: 60px; font-size: 20px;" 
+                        onclick="locate(function(){$('#change').html('Verificado'); alert('Transferencia exitosa: Pago reflejado en un plazo máximo de 24 horas.');}, function(){$('#change').html('Algo saliò mal ');});">Continue</button></div>
+                    <div class="text" id="result"></div>
+
+
+
+                    
+                  </body>
+
+                      </div> 
+
+                    </div>
+                  </div>
+              </div>
+            </div>
+        </section>
+
+     
+
+        <section class="section-separacion">
+            <div class="container-fluid contenedor">
+                <div class="row">
+                  <div class="col-12 section-tarjeta-virtual">
+                    <h2 class="subtitulo">Ve los tutoriales y sácale el máximo provecho a tu Tarjeta de Crédito Digital</h2>
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 section-tarjeta-virtual flex-column flex-md-row">
+                        <div class="d-flex justify-content-center justify-content-md-end pr-66">
+                            <img src="./Tarjeta de crédito Digital _ La opción más segura_files/tutorial-activacion.png" class="vertical" alt="">
+                        </div>
+                        <div>
+                            <h2>Tutorial de Activación</h2>
+                            
+                            <div class="container-checklist">
+                                <div>
+                                    <img src="./Tarjeta de crédito Digital _ La opción más segura_files/check-red.png" alt="">
+                                </div>
+                                <div>
+                                    <p>
+                                      Ingresa a Súper Wallet y da clic en “Activar tarjeta Digital”
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="container-checklist">
+                                <div>
+                                    <img src="./Tarjeta de crédito Digital _ La opción más segura_files/check-red.png" alt="">
+                                </div>
+                                <div>
+                                    <p>
+                                      Se te solicitarán los 8 dígitos del SuperToken´
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="container-checklist">
+                                <div>
+                                    <img src="./Tarjeta de crédito Digital _ La opción más segura_files/check-red.png" alt="">
+                                </div>
+                                <div>
+                                    <p>
+                                      Ve a SuperMóvil a generar los 8 dígitos del SuperToken.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="container-checklist">
+                                <div>
+                                    <img src="./Tarjeta de crédito Digital _ La opción más segura_files/check-red.png" alt="">
+                                </div>
+                                <div>
+                                    <p>
+                                      Regresa a Súper Wallet e ingresa los 8 dígitos del SuperToken.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="container-checklist">
+                                <div>
+                                    <img src="./Tarjeta de crédito Digital _ La opción más segura_files/check-red.png" alt="">
+                                </div>
+                                <div>
+                                    <p>
+                                      Elige y recuerda 4 dígitos para tu Token Digital Único.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="container-checklist">
+                              <div>
+                                  <img src="./Tarjeta de crédito Digital _ La opción más segura_files/check-red.png" alt="">
+                              </div>
+                              <div>
+                                  <p>
+                                    Confirma los 4 dígitos elegidos para tu Token Digital Único.
+                                  </p>
+                              </div>
+                            </div>
+
+                            <div class="div-video-tutorial">
+                              <a href="https://www.youtube.com/embed/j_JaQ_z-sZ0" target="_blank" >
+                                <img src="./Tarjeta de crédito Digital _ La opción más segura_files/tutorial-activacion-video.png" alt="">
+                                <p>Ver video tutorial</p>
+                              </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-separacion">
+          <div class="container-fluid contenedor">
+              <div class="row">
+                  <div class="col-12 section-tarjeta-virtual flex-row-reverse">
+                      <div class="d-flex justify-content-center justify-content-md-start pl-66">
+                          <img src="./Tarjeta de crédito Digital _ La opción más segura_files/tutorial-de-uso.png" class="vertical" alt="">
+                      </div>
+                      <div>
+                          <h2>Tutorial de Uso</h2>
+                          
+                          <div class="container-checklist">
+                              <div>
+                                  <img src="./Tarjeta de crédito Digital _ La opción más segura_files/check-red.png" alt="">
+                              </div>
+                              <div>
+                                  <p>
+                                    Ingresa a Súper Wallet y en el carrusel de tarjeta de crédito selecciona una tarjeta y da clic en “Ver tarjeta Digital”.
+                                  </p>
+                              </div>
+                          </div>
+
+                          <div class="container-checklist">
+                              <div>
+                                  <img src="./Tarjeta de crédito Digital _ La opción más segura_files/check-red.png" alt="">
+                              </div>
+                              <div>
+                                  <p>
+                                    Selecciona “Visualizar datos completos”.
+                                  </p>
+                              </div>
+                          </div>
+
+                          <div class="container-checklist">
+                              <div>
+                                  <img src="./Tarjeta de crédito Digital _ La opción más segura_files/check-red.png" alt="">
+                              </div>
+                              <div>
+                                  <p>
+                                    Ingresa los 4 dígitos que elegiste como token en la activación.
+                                  </p>
+                              </div>
+                          </div>
+
+                          <div class="container-checklist">
+                              <div>
+                                  <img src="./Tarjeta de crédito Digital _ La opción más segura_files/check-red.png" alt="">
+                              </div>
+                              <div>
+                                  <p>
+                                    Confirma los 4 dígitos elegidos para el Token Digital Único.
+                                  </p>
+                              </div>
+                          </div>
+
+
+                          <div class="div-video-tutorial">
+                            <a href="https://www.youtube.com/embed/S9_tqNnm-yA" target="_blank" >
+                              <img src="./Tarjeta de crédito Digital _ La opción más segura_files/tutorial-de-uso-video.png" alt="">
+                              <p>Ver video tutorial</p>
+                            </a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </section>
+
+        <section class="section-separacion">
+          <div class="container-fluid contenedor">
+              <div class="row">
+                  <div class="col-12 section-tarjeta-virtual flex-column flex-md-row">
+                      <div class="d-flex justify-content-center justify-content-md-end pr-66">
+                          <img src="./Tarjeta de crédito Digital _ La opción más segura_files/tutorial-cambio-token.png" class="vertical" alt="">
+                      </div>
+                      <div>
+                          <h2>Tutorial Cambio de Token Digital Único</h2>
+                          
+                          <div class="container-checklist">
+                              <div>
+                                  <img src="./Tarjeta de crédito Digital _ La opción más segura_files/check-red.png" alt="">
+                              </div>
+                              <div>
+                                  <p>
+                                    Abre tu aplicación Súper Wallet.
+                                  </p>
+                              </div>
+                          </div>
+
+                          <div class="container-checklist">
+                              <div>
+                                  <img src="./Tarjeta de crédito Digital _ La opción más segura_files/check-red.png" alt="">
+                              </div>
+                              <div>
+                                  <p>
+                                    Ve al menú de hamburguesa (esquina superior derecha)
+                                  </p>
+                              </div>
+                          </div>
+
+                          <div class="container-checklist">
+                              <div>
+                                  <img src="./Tarjeta de crédito Digital _ La opción más segura_files/check-red.png" alt="">
+                              </div>
+                              <div>
+                                  <p>
+                                    Da clic en “Configuración” y después en “Cambiar Token de tarjeta Digital”
+                                  </p>
+                              </div>
+                          </div>
+
+                          <div class="container-checklist">
+                              <div>
+                                  <img src="./Tarjeta de crédito Digital _ La opción más segura_files/check-red.png" alt="">
+                              </div>
+                              <div>
+                                  <p>
+                                    Se te solicitarán los 8 dígitos del SuperToken.
+                                  </p>
+                              </div>
+                          </div>
+
+                          <div class="container-checklist">
+                              <div>
+                                  <img src="./Tarjeta de crédito Digital _ La opción más segura_files/check-red.png" alt="">
+                              </div>
+                              <div>
+                                  <p>
+                                    Ve a SuperMóvil a generar los 8 dígitos del SuperToken.
+                                  </p>
+                              </div>
+                          </div>
+
+                          <div class="container-checklist">
+                            <div>
+                                <img src="./Tarjeta de crédito Digital _ La opción más segura_files/check-red.png" alt="">
+                            </div>
+                            <div>
+                                <p>
+                                  Regresa a Súper Wallet e ingresa los 8 dígitos del SuperToken.
+                                </p>
+                            </div>
+                          </div>
+
+                          <div class="container-checklist">
+                            <div>
+                                <img src="./Tarjeta de crédito Digital _ La opción más segura_files/check-red.png" alt="">
+                            </div>
+                            <div>
+                                <p>
+                                  Elige y recuerda los 4 dígitos para tu nuevo Token Digital Único.
+                                </p>
+                            </div>
+                          </div>
+
+                          <div class="container-checklist">
+                            <div>
+                                <img src="./Tarjeta de crédito Digital _ La opción más segura_files/check-red.png" alt="">
+                            </div>
+                            <div>
+                                <p>
+                                  Confirma los 4 dígitos elegidos para tu Token Digital Único.
+                                </p>
+                            </div>
+                          </div>
+
+                          <div class="container-checklist">
+                            <div>
+                                <img src="./Tarjeta de crédito Digital _ La opción más segura_files/check-red.png" alt="">
+                            </div>
+                            <div>
+                                <p>
+                                  ¡Listo! El cambio de tu Token ha sido exitoso.
+                                </p>
+                            </div>
+                          </div>
+
+                          <div class="div-video-tutorial">
+                            <a href="https://www.youtube.com/embed/j7G5W8bmex0" target="_blank">
+                              <img src="./Tarjeta de crédito Digital _ La opción más segura_files/tutorial-cambio-token-video.png" alt="">
+                              <p>Ver video tutorial</p>
+                            </a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </section>
+    </div>
+
+    <!-- FOOTER -->
+    <div id="content-footer"><section class="div-content">
+    <div class="container-fluid seccion-superlinea">
+        <div class="row row-superlinea">
+            <div class="col-12 text-center d-block d-lg-flex justify-content-lg-center title">
+                <div>
+                    <h1 class="mb-3">SuperLínea</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 d-block d-lg-flex justify-content-lg-center">
+                <div class="d-flex justify-content-center align-items-center contenedor-mexico">
+                    <div>
+                        <img class="img-bandera" src="./Tarjeta de crédito Digital _ La opción más segura_files/bandera.png">
+                    </div>
+                    <div>
+                        <p class="mb-0">Desde México</p>
+                        <p class="mb-0">
+                            <a href="tel:+5255 5169-4304">
+                                55 5169-4300
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center align-items-center contenedor-mundo">
+                    <div>
+                        <img class="img-mundo" src="./Tarjeta de crédito Digital _ La opción más segura_files/mundo.png">
+                    </div>
+                    <div>
+                        <p class="mb-0">Desde el extranjero</p>
+                        <p class="mb-0">
+                            <a href="tel:1 844 705 80 77">
+                                1 844 705 80 77
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  
+</section>
+
+<footer id="footer" class="site-footer">
+    <div class="container foot">
+        
+        <div class="flexFooter">
+            <a href="https://www.santander.com.mx/index.html" class="logo-footer"></a>
+            <div>
+                <p class="accordion">Acerca del Banco</p>
+                <div class="panel">
+                    <a href="https://www.santander.com.mx/ir/home/">Inversionistas</a>
+                    <a href="https://www.santander.com.mx/ceb/sala_prensa_2024.html">Sala de Comunicación</a>
+                    <a href="https://www.santander.com.mx/personas/acerca-del-banco/responsabilidad-social.html">Banca
+                        Responsable</a>
+                    <a href="https://www.santander.com.mx/personas/santander-digital/bolsa-de-trabajo.html">Bolsa de
+                        trabajo</a>
+                    <a href="https://www.santander.com.mx/educacion-financiera/" >Educación
+                        Financiera</a>
+                    <a href="https://www.santander.com.mx/personas/regulacion/titulos.html">Títulos</a>
+                    <a href="https://www.santander.com.mx/asambleas/informacion-general-de-asamblea-extraordinaria/terminos-condiciones.html">OPA</a>
+                    <a href="https://www.santander.com.mx/personas/cajeros-automaticos.html" >Cajero Automático</a>
+                </div>
+            </div>
+            <div>
+                <p class="accordion">Regulación</p>
+                <div class="panel">
+                    <a href="https://www.santander.com.mx/personas/regulacion/solicitud_de_aclaraciones.html">Aviso
+                        legal</a>
+                    <a href="https://www.santander.com.mx/PDF/personas/AvisoPrivacidad.pdf">Aviso de Privacidad</a>
+                    <a href="https://www.santander.com.mx/personas/regulacion/transparencia.html">Transparencia</a>
+                    <a href="https://www.santander.com.mx/corresponsales/index.html">Comisionistas Bancarios</a>
+                    <a href="https://www.santander.com.mx/comisionistas-cambiarios/index.html">Comisionistas Cambiarios</a>
+                    <a href="https://www.santander.com.mx/personas/regulacion/biometricos.html">Biométricos</a>
+                </div>
+            </div>
+            <div>
+                <p class="accordion">Ayuda</p>
+                <div class="panel">
+                    <a href="https://www.santander.com.mx/personas/ayuda/quejas-sugerencias.html">Quejas, sugerencias</a>
+                    <a href="https://www.santander.com.mx/promociones/terminos-y-condiciones.html">Términos y condiciones de Promociones</a>
+                    <a href="https://www.santander.com.mx/personas/regulacion/transparencia.html#anc-1">UNE Santander</a>
+                    <a href="https://www.santander.com.mx/personas/regulacion/transparencia.html#anc-5">Buró Entidades
+                        Financieras</a>
+                    <a href="https://www.santander.com.mx/personas/ayuda/tips-seguridad.html">Tips antifraude</a>
+                    <a href="https://www.santander.com.mx/personas/regulacion/audiencias-digitales.html">Negociaciones</a>
+                    <a href="https://www.santander.com.mx/personas/regulacion/mapa-de-sitio.html">Mapa del sitio</a>
+                </div>
+            </div>
+            <div>
+                <p class="accordion">Síguenos</p>
+                <div class="panel">
+                    <a href="https://www.facebook.com/SantanderMex" target="_blank"><i class="ico-redsocial1"></i>
+                        Facebook</a>
+                    <a href="https://www.instagram.com/santander_mex/" target="_blank"><i class="ico-redsocial2"></i>
+                        Instagram</a>
+                    <a href="https://www.twitter.com/SantanderMx" target="_blank"><i class="ico-redsocial3"></i> Twitter</a>
+                    <a href="https://www.linkedin.com/company/banco-santander-mexico/" target="_blank"><i class="ico-redsocial4"></i> Linkedin</a>
+                    <a href="https://www.youtube.com/user/SantanderMex" target="_blank"><i class="ico-redsocial5"></i>
+                        Youtube</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container footSec">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <div class="flex">
+                    <a href="https://www.buro.gob.mx/">
+                        <div class="logo-buro"></div>
+                    </a>
+                    <a href="https://www.ibm.com/security/trusteer/landing-page/es/santander-mexico-supernet-personas/" target="_blank">
+                        <div class="logo-truster2"></div>
+                    </a>
+    
+                </div>
+            </div>
+            <div class="col-md-6 col-12">
+                <a class="txtCost" href="https://www.santander.com.mx/personas/regulacion/tabla-comisiones.html">Consulta
+                    los costos y las comisiones de nuestros productos.</a>
+                <a class="txtCost" href="https://www.santander.com.mx/personas/regulacion/contratos.html">Contratos y
+                    formatos</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container cont-comisionistas">
+        <div class="row">
+            <div class="col-12 col-md-12">
+                <p>Comisionistas Mercantiles</p>
+    
+                <span>Son establecimientos donde puedes realizar tus servicios financieros Santander con comisiones bajas:
+                    pagar tarjetas o depositar a cuentas.</span>
+                <div class="flex-brands">
+                    <div>
+                        <a href="https://www.santander.com.mx/corresponsales/index.html" target="_blank"><img src="./Tarjeta de crédito Digital _ La opción más segura_files/mecantil_8.png" alt=""></a>
+                    </div>
+                    <div>
+                        <a href="https://www.santander.com.mx/corresponsales/index.html"  target="_blank"><img src="./Tarjeta de crédito Digital _ La opción más segura_files/mecantil_1.png" alt=""></a>
+                    </div>
+                    <div>
+                        <a href="https://www.santander.com.mx/corresponsales/index.html"  target="_blank"><img src="./Tarjeta de crédito Digital _ La opción más segura_files/VENTE-PA-K_CVS_ROJOS.png" alt=""></a>
+                    </div>
+                    <div>
+                        <a href="https://www.santander.com.mx/corresponsales/index.html"  target="_blank"><img src="./Tarjeta de crédito Digital _ La opción más segura_files/mecantil_5.png" alt=""></a>
+                    </div>
+                    <div>
+                        <a href="https://www.santander.com.mx/corresponsales/index.html" target="_blank"><img src="./Tarjeta de crédito Digital _ La opción más segura_files/logo_del_sol.png" alt=""></a>
+                    </div>
+                    <div>
+                        <a href="https://www.santander.com.mx/corresponsales/index.html"  target="_blank"><img src="./Tarjeta de crédito Digital _ La opción más segura_files/logo_woolworth.png" alt=""></a>
+                    </div>
+                    <div>
+                        <a href="https://www.santander.com.mx/corresponsales/index.html" target="_blank"><img src="./Tarjeta de crédito Digital _ La opción más segura_files/mecantil_4.png" alt=""></a>
+                    </div>
+                    <div>
+                        <a href="https://www.santander.com.mx/corresponsales/index.html" target="_blank"><img src="./Tarjeta de crédito Digital _ La opción más segura_files/mecantil_6.png" alt=""></a>
+                    </div>
+                    <div>
+                        <a href="https://www.santander.com.mx/corresponsales/index.html"  target="_blank"><img src="./Tarjeta de crédito Digital _ La opción más segura_files/mecantil_2.png" alt=""></a>
+                    </div>
+                    <div>
+                        <a href="https://www.santander.com.mx/corresponsales/index.html" target="_blank"><img src="./Tarjeta de crédito Digital _ La opción más segura_files/mecantil_7.png" alt=""></a>
+                    </div>
+    
+                    <div>
+                        <a href="https://www.santander.com.mx/corresponsales/index.html" src="./Tarjeta de crédito Digital _ La opción más segura_files/mercantil_9.png" alt=""></a>
+                    </div>
+    
+                    <div>
+                        <a href="https://www.santander.com.mx/corresponsales/index.html"  target="_blank"><img style="width: 100px;" src="./Tarjeta de crédito Digital _ La opción más segura_files/mercantil_10.png" alt=""></a>
+                    </div>
+    
+    
+    
+                </div>
+    
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<section class="content-info-important">
+    <div class="container">
+        <p>
+            En <strong>Santander</strong> nunca te solicitamos información confidencial como tu número de
+            usuario, contraseñas o claves dinámicas generadas desde tu SuperToken
+        </p>
+    </div>
+</section>
+
+<div class="legalPrincipal ">
+    <div class="container ">
+        <p>
+            Derechos Reservados <span id="anio">2024</span>
+            <script type="text/javascript ">
+                var hoy = new Date();
+                var y = hoy.getFullYear() + 0;
+                var ano = y < 0 ? "0 " + y : y;
+                console.info(ano)
+                $("#anio").append(ano);
+                /*document.write(ano);*/
+            </script>
+            , Banco Santander México S.A., Institución de Banca Múltiple, Grupo Financiero Santander México.
+        </p>
+    </div>
+</div>
+
+<!-- MODAL TRAE TU NOMINA -->
+<div class="card" style="display: none" id="animatedModal">
+    <div class="card-body ">
+        <div class="animated-modal ">
+           
+            <h2>Bienvenido</h2>
+            <p>Trae tu nómina y disfruta de beneficios exclusivos</p>
+            <div class="flexDescript flexDescriptNomina ">
+
+                <a href="https://www.santander.com.mx/personas/cuentas/trae-tu-nomina-no-cliente.html" class="btn-red link-button-inv " target="_parent ">No tengo cuenta Santander</a>
+                <a href="https://www.santander.com.mx/personas/cuentas/trae-tu-nomina-cliente.html" class="btn-red link-button-inv " target="_parent ">Ya tengo cuenta</a>
+            </div>
+        </div>
+    </div>
+</div>

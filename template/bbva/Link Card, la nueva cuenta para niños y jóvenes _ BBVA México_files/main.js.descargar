@@ -1,0 +1,419 @@
+var step2 = document.getElementById('step2');
+var step1 = document.getElementById('step1');
+var title = document.getElementById('title1');
+var copy = document.getElementById('copy');
+
+function selectCard(foo) {
+  var id = document.getElementById(foo);
+  if (id.classList.contains('selected')) {
+
+  } else {
+    var elemnts = document.getElementsByClassName('desktop flex-item');
+    var initPos = id.offsetLeft;
+    var result = (initPos - posfinal)
+    for (var i = 0; i < elemnts.length; i++) {
+      var posfinal = 150;
+      var trigger = document.getElementById(elemnts[i].id);
+      var result = (trigger.offsetLeft - posfinal);
+      trigger.style.left = '15%'
+      if (elemnts[i].id == foo) {
+        trigger.style.zIndex = 2;
+        trigger.classList.add('selected');
+      } else {
+        trigger.style.zIndex = 1;
+        trigger.classList.remove('selected');
+      }
+    }
+    var caja = document.getElementById('cajaDerecha');
+    caja.style.left = '50%';
+    title.innerHTML = 'Personaliza tu tarjeta';
+    copy.innerHTML = 'Ya casi terminas. Ingresa<span class="bold"> tu nombre </span> o lo que quieras que diga tu tarjeta.'
+  }
+}
+
+function goBack() {
+  document.getElementsByClassName('output')[0].innerHTML = '';
+  document.getElementsByClassName('output2')[0].innerHTML = '';
+  document.getElementsByClassName('output3')[0].innerHTML = '';
+  document.getElementsByClassName('output4')[0].innerHTML = '';
+  document.getElementById('myTextarea').value = '';
+  document.getElementById('nombreCompleto').value = '';
+  var elemnts = document.getElementsByClassName('desktop flex-item');
+  var caja = document.getElementById('cajaDerecha');
+  caja.style.left = '200%';
+  for (var i = 0; i < elemnts.length; i++) {
+    var trigger = document.getElementById(elemnts[i].id);
+    trigger.classList.remove("selected");
+    if (i === 0) {
+      trigger.style.left = '0%';
+    } else {
+      trigger.style.left = (25 * i) + '%'
+    }
+
+  }
+  title.innerHTML = '¿Qué tarjeta prefieres?'
+  copy.innerHTML = 'Elige el <span class="bold">diseño</span> que más te guste para tu Link Card.';
+
+}
+
+function shareView() {
+  if (document.getElementById('myTextarea').value != '') {
+    step2.style.display = 'block';
+    step1.style.display = 'none';
+    title.innerHTML = '¡Listo!';
+    copy.innerHTML = "<span class='bold copyFinal'>Ábrela ahora en BBVA.mx dando clic <a href='https://portal.bancomer.com/comun/ingreso.jsp?producto=dl&cual=lkc' target='_blank'>aquí</a> <br> </span>";
+    document.getElementById('myTextarea').value = ''
+  }
+
+
+}
+
+function initCards() {
+  document.getElementsByClassName('output')[0].innerHTML = '';
+  document.getElementsByClassName('output2')[0].innerHTML = '';
+  document.getElementsByClassName('output3')[0].innerHTML = '';
+  document.getElementsByClassName('output4')[0].innerHTML = '';
+  var caja = document.getElementById('cajaDerecha');
+  caja.style.left = '200%';
+  step1.style.display = 'block';
+  step2.style.display = 'none';
+  var elemnts = document.getElementsByClassName('desktop flex-item');
+  title.innerHTML = '¿Qué tarjeta prefieres?'
+  copy.innerHTML = 'Elige el <span class="bold">diseño</span> que más te guste para tu Link Card.';
+  for (var i = 0; i < elemnts.length; i++) {
+    var trigger = document.getElementById(elemnts[i].id);
+    trigger.classList.remove("selected");
+    if (i === 0) {
+      trigger.style.left = '0%';
+    } else {
+      trigger.style.left = (25 * i) + '%'
+    }
+    trigger.classList.remove('selected');
+  }
+
+  //caja.style.left = '55%';
+}
+
+var pesonalizaSection = document.getElementsByClassName('personaliza-mobile');
+var sliderCards = document.getElementsByClassName('slider-cards');
+var listoMobile = document.getElementsByClassName('listo-mobile');
+
+
+
+function backMobile() {
+  document.getElementsByClassName('output')[0].innerHTML = '';
+  document.getElementsByClassName('output2')[0].innerHTML = '';
+  document.getElementsByClassName('output3')[0].innerHTML = '';
+  document.getElementsByClassName('output4')[0].innerHTML = '';
+  document.getElementById('myTextarea').value = '';
+  document.getElementById('nombreCompleto').value = '';
+  sliderCards[0].classList.remove('hidden');
+  pesonalizaSection[0].classList.add('hidden')
+  cleanInputs();
+}
+
+function cleanInputs() {
+  var input = document.getElementById('nombreCompleto').value = ''
+  var outputMob = document.getElementsByClassName('outputMobile');
+  for (i = 0; i < outputMob.length; i++) {
+    //outputMob[i].removeAttribute("style")
+    outputMob[i].innerHTML = '';
+  }
+}
+
+function lastStep() {
+  pesonalizaSection[0].classList.add('hidden');
+  listoMobile[0].classList.remove('hidden');
+
+}
+//MOBILE
+function mobileSelected() {
+  var selected = document.querySelector('.swiper-slide.swiper-slide-active li img');
+  var img = document.getElementById('card')
+  var img2 = document.getElementById('card2')
+
+  var imgPath = 'assets/img/tarjetas/Linkcard_'
+  imgPath = imgPath + selected.id + '.png';
+  var outputMob = document.getElementsByClassName('outputMobile');
+  if (selected.id == 'linkCard2' || selected.id == 'linkCard3') {
+    //console.log('if',)
+    for (i = 0; i < outputMob.length; i++) {
+      outputMob[i].style.color = '#11357e';
+    }
+  } else {
+    console.log('else', selected.id)
+    var outputMob = document.getElementsByClassName('outputMobile');
+    for (i = 0; i < outputMob.length; i++) {
+      outputMob[i].style.color = '#fff';
+    }
+  }
+  img.src = imgPath;
+  img2.src = imgPath;
+  sliderCards[0].classList.add('hidden');
+  pesonalizaSection[0].classList.remove('hidden')
+}
+
+function otherCards() {
+  pesonalizaSection[0].classList.add('hidden');
+  listoMobile[0].classList.add('hidden');
+  sliderCards[0].classList.remove('hidden');
+  cleanInputs();
+}
+
+//IMG
+function creaImg(scale, type) {
+  html2canvas(document.querySelector('.selected'), {
+    scale: scale,
+    quality: 1.0,
+    // width: 600,
+    // height : 315
+  }).then(function(canv) {
+
+    $.ajax({
+      type: 'POST',
+      url: 'saveImage.php',
+      dataType: 'text',
+      data: {
+        img: canv.toDataURL()
+      },
+      success: function(dataFromServer) {
+        if (dataFromServer == 'ko') {
+          alert("Ha sucedido un error.");
+        } else {
+
+          if (type == 'tw') {
+            window.open('contw.php?p=' + dataFromServer);
+          }
+          if (type == 'fb') {
+            console.log(dataFromServer)
+            urlenc = encodeURIComponent('http://localhost/personalizar-link-card/share.php?img=' + dataFromServer);
+            console.log(urlenc);
+            img = dataFromServer + '.jpg';
+            url = 'https://www.facebook.com/sharer/sharer.php?u=https://bancadigital.bbva.mx/personalizar-link-card/share.php?img=' + img;
+            console.log(url);
+
+            window.open(url, '_blank');
+            // postStory(dataFromServer);
+          }
+          if (type == 'ws') {
+            whatsAppMsg(dataFromServer);
+          }
+        }
+      }
+    })
+  })
+}
+
+// input
+
+function setName(event) {
+
+  const regex = new RegExp('^[ .a-zA-Zñ/\s_\b\t]+$');
+  const key = String.fromCharCode(!event.charCode ? event.which : event.charCode);
+  if (!regex.test(key)) {
+    event.preventDefault();
+  }
+  const illegalChars = /[\u0021-\u002f\u003a-\u0040\u005b-\u005e\u0060\u007b-\u007e\u00B4]/g;
+  const inva = /[`´!#*$/%&Ç^¨}{¿?¡_':.ºª0987654321+=_-]/i;
+  if (illegalChars.test(event.target.value) === true || inva.test(event.target.value) === true) {
+    const nuevacadena = event.target.value.replace(/[`´!/#*$%&Ç^¨}{¿?¡_':.ºª0987654321+=-]/i, '');
+    document.getElementById('myTextarea').value = nuevacadena;
+    document.getElementById('nombreCompleto').value = nuevacadena;
+  }
+}
+
+function checkList(event) {
+  var str = event.target.value.toLowerCase();
+  var narray = str.split(" ");
+
+  for (i = 0; i < narray.length; i++) {
+    blacklist.toString();
+    if (blacklist.indexOf(narray[i]) > -1) {
+      document.getElementById('myTextarea').value = '';
+    }
+  }
+  //Validación para borrar todo el elemento del array
+  for (var i = 0; i < blacklist.length; i++) {
+    if (document.getElementById('myTextarea').value === blacklist[i]) {
+      document.getElementById('myTextarea').value = '';
+      //console.log("Se cumple");
+    }
+  }
+}
+
+function setName(event) {
+  let valueInput = document.getElementById('myTextarea').value;
+  const regex = new RegExp('^[ .a-zA-Zñ/\s_\b\t]+$');
+  const key = String.fromCharCode(!event.charCode ? event.which : event.charCode);
+  if (!regex.test(key)) {
+    event.preventDefault();
+  }
+  const illegalChars = /[\u0021-\u002f\u003a-\u0040\u005b-\u005e\u0060\u007b-\u007e\u00B4]/g;
+  const inva = /[`´!#*$/%&Ç^¨}{¿?¡_':.ºª0987654321+=_-]/i;
+  if (illegalChars.test(event.target.value) === true || inva.test(event.target.value) === true) {
+    const nuevacadena = event.target.value.replace(/[`´!/#*$%&Ç^¨}{¿?¡_':.ºª0987654321+=-]/i, '');
+    document.getElementById('myTextarea').value = nuevacadena;
+  }
+}
+
+function checkBlack(event) {
+  console.log(blacklist.indexOf(event.target.value));
+  if (blacklist.indexOf(event.target.value) > -1) {
+    document.getElementById('myTextarea').value = '';
+  }
+}
+// onkeypress = "setName(event)"
+// onkeyup = "checkBlack(event)"
+function checkBlack(event) {
+  /*
+  console.log(blacklist.map(function (x) {
+    return x.toLowerCase()
+  }));
+  */
+  if (blacklist.indexOf(event.target.value) > -1) {
+    document.getElementById('myTextarea').value = '';
+  }
+
+  if (blacklist.map(function(x) {
+      return x.toLowerCase()
+    }).indexOf(event.target.value) > -1) {
+    document.getElementById('myTextarea').value = '';
+  }
+
+  if (blacklist.map(function(x) {
+      return x.toUpperCase()
+    }).indexOf(event.target.value) > -1) {
+    document.getElementById('myTextarea').value = '';
+  }
+}
+
+// VALIDACION EN MOBILE
+function checkListMobile(event) {
+  var str = event.target.value.toLowerCase();
+  var narray = str.split(" ");
+
+  for (i = 0; i < narray.length; i++) {
+    if (blacklist.indexOf(narray[i]) > -1) {
+      document.getElementById('nombreCompleto').value = '';
+    }
+  }
+  //Validación para borrar todo el elemento del array en mobile
+  for (var i = 0; i < blacklist.length; i++) {
+    if (document.getElementById('nombreCompleto').value === blacklist[i]) {
+      document.getElementById('nombreCompleto').value = '';
+      //console.log("Se cumple");
+    }
+  }
+}
+
+function setNameMobile(event) {
+
+  let valueInput = document.getElementById('nombreCompleto').value;
+  const regex = new RegExp('^[ .a-zA-Zñ/\s_\b\t]+$');
+  const key = String.fromCharCode(!event.charCode ? event.which : event.charCode);
+  if (!regex.test(key)) {
+    event.preventDefault();
+  }
+  const illegalChars = /[\u0021-\u002f\u003a-\u0040\u005b-\u005e\u0060\u007b-\u007e\u00B4]/g;
+  const inva = /[`´!#*$/%&Ç^¨}{¿?¡_':.ºª0987654321+=_-]/i;
+  if (illegalChars.test(event.target.value) === true || inva.test(event.target.value) === true) {
+    const nuevacadena = event.target.value.replace(/[`´!/#*$%&Ç^¨}{¿?¡_':.ºª0987654321+=-]/i, '');
+    document.getElementById('nombreCompleto').value = nuevacadena;
+  }
+}
+
+function checkBlackMobile(event) {
+  console.log(blacklist.indexOf(event.target.value));
+  if (blacklist.indexOf(event.target.value) > -1) {
+    document.getElementById('nombreCompleto').value = '';
+  }
+}
+// onkeypress = "setNameMobile(event)"
+// onkeyup = "checkBlackMobile(event)"
+function checkBlackMobile(event) {
+  console.log(blacklist.map(function(x) {
+    return x.toLowerCase()
+  }));
+  if (blacklist.indexOf(event.target.value) > -1) {
+    document.getElementById('nombreCompleto').value = '';
+  }
+
+  if (blacklist.map(function(x) {
+      return x.toLowerCase()
+    }).indexOf(event.target.value) > -1) {
+    document.getElementById('nombreCompleto').value = '';
+  }
+
+  if (blacklist.map(function(x) {
+      return x.toUpperCase()
+    }).indexOf(event.target.value) > -1) {
+    document.getElementById('nombreCompleto').value = '';
+  }
+}
+
+
+//LIMPIA CAMPO
+function clearField() {
+  document.getElementById('myTextarea').value = '';
+}
+
+function clearFieldMobile() {
+  document.getElementById('nombreCompleto').value = '';
+  document.getElementsByClassName('outputMobile')[0].innerHTML = '';
+}
+
+//FB
+function postStory(dataFromServer) {
+  FB.ui({
+    method: 'feed',
+    app_id: 715925658792266,
+    name: 'LinkCard',
+    display: 'popup',
+    link: 'https://bancadigital.bbva.mx/personalizar-link-card/photos/' + dataFromServer + '.jpg',
+    description: 'Que tu hij@ explore el mundo de una forma segura con su primer tarjeta #HazloConLinkCard',
+    caption: 'Link Card',
+    source: 'https://bancadigital.bbva.mx/personalizar-link-card/index.html',
+    redirect_uri: 'https://bancadigital.bbva.mx/personalizar-link-card/index.html'
+  }, function(response) {
+    if (response && !response.error_message) {
+      $('#lb_msj').text('link posteado' + response.app_id);
+    } else {
+      $('#lb_msj').text('error ...');
+    }
+  });
+
+  // urlsharefb = 'https://www.facebook.com/login.php?skip_api_login=1&api_key=715925658792266&signed_next=1&next=https://www.facebook.com/v2.0/dialog/share?href=https://bancadigital.bancomer.com/tarjetas-bancomer-test/photos/' + dataFromServer + '.jpg' + '&redirect_uri=https://bancadigital.bancomer.com/tarjetas-bancomer-test/?ac=close&display=popup';
+  // window.open(urlsharefb, "_blank", "location=yes,width=700,height=" + 380);
+  // return false;
+
+
+  // FB.ui({
+  //   method: 'share',
+  //   app_id: 715925658792266,
+  //   href: 'https://bancadigital.bancomer.com/tarjetas-bancomer/photos/' + dataFromServer + '.jpg',
+  //   redirect_uri: 'https://bancadigital.bancomer.com/tarjetas-bancomer/',
+
+  //   caption: 'Link Card',
+  //   description: 'Que tu hij@ explore el mundo de una forma segura con su primer tarjeta #HazloConLinkCard',
+
+  //   display: 'iframe'
+  // }, function (response) {
+  //   if (response && !response.error_message) {
+  //     $('#lb_msj').text('link posteado' + response.app_id);
+  //   } else {
+  //     $('#lb_msj').text('error ...');
+  //   }
+  // });
+}
+
+//wHATS
+function whatsAppMsg() {
+  console.log('test creacion de imagen');
+  setTimeout(function() {
+    // window.location.href = 'https://api.whatsapp.com/send?text=https://bancadigital.bancomer.com/tarjetas-bancomer/photos/' + dataFromServer + '.jpg';
+    //window.location.href = 'whatsapp://send?text=Que%20tu%20hijo%20explore%20el%20mundo%20de%20una%20forma%20segura%20con%20su%20primera%20tarjeta,%20hazlo%20en:%20https://tinyurl.com/yaoj2mfv%20#HazloConLinkCard';
+    window.location.href = 'whatsapp://send?text=Que%20tu%20hijo%20explore%20el%20mundo%20de%20una%20forma%20segura%20con%20su%20primera%20tarjeta%20Link%20Card%20de%20BBVA,%20hazlo%20en:%20https://bit.ly/2AbWCuP%20#HazloConLinkCard';
+    // window.location.href = 'whatsapp://send?text=Que20%tu20%hij@20%explore20%el20%mundo20%de20%una20%forma20%segura20%con20%su20%primer20%tarjeta20%hazlo20%en20%https://tinyurl.com/yase36uw';
+    //window.location.href = 'whatsapp://send?text=https://bancadigital.bancomer.com/tarjetas-bancomer/photos/' + dataFromServer + '.jpg';
+  }, 2000);
+}

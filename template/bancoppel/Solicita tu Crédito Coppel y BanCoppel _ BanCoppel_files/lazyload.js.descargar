@@ -1,0 +1,15 @@
+document.addEventListener('DOMContentLoaded', function(){  
+    var imagesList = document.querySelectorAll('img.lazy-load, div.lazy-load');
+    for (var i in imagesList) {
+        if (typeof imagesList[i] == 'object' && i != 'prevObject') {
+            if (imagesList[i] && imagesList[i].hasAttribute('data-src')) {
+                var newImageUrl = imagesList[i].getAttribute('data-src');
+                if (imagesList[i].tagName == 'IMG') {
+                    imagesList[i].src = newImageUrl;
+                } else {
+                    imagesList[i].style.backgroundImage = 'url(' + newImageUrl + ')';
+                }
+            }
+        }
+    }
+});

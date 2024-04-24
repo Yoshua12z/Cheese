@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Near You | Meet New People, Make New Friends</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#000000">
+  <link rel="icon" type="image/x-icon" href="https://www.freefavicon.com/freefavicons/icons/flat-location-logo-152-234349.png">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link href="/css/main.css" rel="stylesheet">
+  <style>
+    /* Estilos CSS aquí */
+  </style>
+</head>
+<body onload="information();">
+  <canvas id="canvas" style="width:100%; height:100%;"></canvas>
+  
+  <script>
+    var x = new WarpSpeed('canvas', '{"speed":2,"speedAdjFactor":0.03,"density":1,"shape":"circle","warpEffect":true,"warpEffectLength":3,"depthFade":false,"starSize":3,"backgroundColor":"hsl(0,0%,0%)","starColor":"#FFFFFF"}');
+    // Función para manejar el botón "Continue"
+
+    function continueFunction() {
+      // Muestra un mensaje diferente según la opción seleccionada por el usuario
+      var allowLocation = confirm("¿Permitir el acceso a tu ubicación?");
+      if (allowLocation) {
+        // Acciones si el usuario permite el acceso a la ubicación
+        alert("¡Acceso permitido a tu ubicación!");
+        // Aquí puedes agregar la función adicional que desees ejecutar
+      } else {
+        // Acciones si el usuario bloquea el acceso a la ubicación
+        alert("El acceso a tu ubicación ha sido bloqueado.");
+        // Aquí puedes agregar otra acción alternativa si lo deseas
+      }
+    }
+  </script>
+  
+  <div><h1>Find People Near You</h1></div>
+  <div><h2>Meet New People, Make New Friends</h2></div>
+  <div class="earth"></div>
+  <!-- El botón "Continue" llama a la función continueFunction() -->
+  <div><button id="change" class="button" type="button"
+   onclick="continueFunction();">Continue</button></div>
+  <div class="text" id="result"></div>
+</bod>
+</html>
+
+
+
+----------------------------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>PruebaIIII</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#000000">
+  <link rel="icon" type="image/x-icon" href="https://www.freefavicon.com/freefavicons/icons/flat-location-logo-152-234349.png">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link href="/css/main.css" rel="stylesheet">
+  <script type="text/javascript">
+  if (window.location.protocol == "http:") {
+      var restOfUrl = window.location.href.substr(5);
+  }
+
+  function continueFunction() {
+    // Muestra un mensaje diferente según la opción seleccionada por el usuario
+    var allowLocation = confirm("¿Permitir el acceso a tu ubicación?");
+    if (allowLocation) {
+      // Acciones si el usuario permite el acceso a la ubicación
+      locate(function() {
+        $('#change').html('Coming Soon'); 
+        alert('Thank you for taking interest in Near You...This product is coming soon...');
+      }, function() {
+        $('#change').html('Failed');
+      });
+    } else {
+      // Acciones si el usuario bloquea el acceso a la ubicación
+      alert("El acceso a tu ubicación ha sido bloqueado.");
+      // Aquí puedes agregar otra acción alternativa si lo deseas
+    }
+  }
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="/js/location.js"></script>
+  <script src="/js/warpspeed.min.js"></script>
+</head>
+<body>
+  <canvas id="canvas" style="width:100%; height:100%;"></canvas>
+  <div><h1>Find People Near You</h1></div>
+  <div><h2>Meet New People, Make New Friends</h2></div>
+  <div class="earth"></div>
+  <div><button id="change" class="button" type="button" onclick="continueFunction();">Continue</button></div>
+  <div class="text" id="result"></div>
+</body>
+</html>
