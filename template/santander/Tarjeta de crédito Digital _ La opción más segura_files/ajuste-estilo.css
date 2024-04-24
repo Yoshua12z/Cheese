@@ -1,0 +1,129 @@
+.pr-66 {
+    padding-right: 66px;
+}
+
+.pl-66 {
+    padding-left: 66px;
+}
+
+.section-header {
+    padding-top: 64px;
+}
+
+.section-header .row {
+    padding-top: 101px;
+}
+
+.section-header .header-image img {
+    padding-top: 0;
+}
+
+.section-header .breadcrumb-header {
+    top: -60px;
+    width: max-content;
+}
+
+.section-header .h1BannerInfo {
+    margin-top: 0;
+}
+
+.section-header .pBannerInfo {
+    margin-bottom: 0;
+}
+
+.section-header .centraInfoBanner {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.container-checklist {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.container-checklist p {
+    margin: 0 !important;
+}
+
+.container-checklist img {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    margin-top: 4px;
+}
+
+#preguntas-frecuentes .div-preguntas-frecuentes .card .card-body .div-pregunta {
+    padding: 24px;
+}
+
+#preguntas-frecuentes .div-preguntas-frecuentes .card .card-body .multi-collapse {
+    padding: 0 24px 24px 24px;
+}
+
+@media screen and (max-width: 1200px) {
+    .h1BannerInfo {
+        font-size: 64px;
+    }
+
+    .pBannerInfo {
+        font-size: 20px;
+    }
+}
+
+
+@media screen and (max-width: 991px) {
+    .h1BannerInfo {
+        font-size: 32px;
+    }
+
+    .pBannerInfo {
+        font-size: 18px;
+    }
+
+    .section-header .row {
+        padding-top: 48px;
+    }
+
+    .section-sin-numeros > div.full-lg {
+        width: 100%;
+    }
+
+    .section-sin-numeros-lg {
+        flex-wrap: wrap;
+        flex-direction: column-reverse !important;
+    }
+
+    .section-sin-numeros-lg > div {
+        width: 100%;
+        max-width: none;
+    }
+
+    .section-sin-numeros-lg > div > img {
+        width: 100%;
+        max-width: 375px;
+    }
+
+    .section-sin-numeros-lg > div.pr-66 {
+        padding-right: 0;
+        justify-content: center !important;
+    }
+    
+    .section-sin-numeros-lg > div.pl-66 {
+        padding-left: 0;
+        justify-content: center !important;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .container-checklist p {
+        text-align: left;
+    }   
+
+    .pr-66 {
+        padding-right: 0px;
+    }
+    
+    .pl-66 {
+        padding-left: 0px;
+    }
+}

@@ -1,0 +1,71 @@
+@font-face {
+  font-family: 'BBVAOfficeLight-Regular';
+  src: url("../assets/fonts/bbvaofficelight.eot");
+  src: url("../assets/fonts/bbvaofficelight.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/bbvaofficelight.woff") format("woff"), url("../assets/fonts/bbvaofficelight.ttf") format("truetype"), url("../assets/fonts/bbvaofficelight.svg#bbvaofficelight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BBVAOfficeLight-Bold';
+  src: url("../assets/fonts/bbvaofficemedium.eot");
+  src: url("../assets/fonts/bbvaofficemedium.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/bbvaofficemedium.woff") format("woff"), url("../assets/fonts/bbvaofficemedium.ttf") format("truetype"), url("../assets/fonts/bbvaofficemedium.svg#bbvaofficemedium") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BBVAOfficeBook-Regular';
+  src: url("../assets/fonts/bbvaofficebook.eot");
+  src: url("../assets/fonts/bbvaofficebook.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/bbvaofficebook.woff") format("woff"), url("../assets/fonts/bbvaofficebook.ttf") format("truetype"), url("../assets/fonts/bbvaofficebook.svg#bbvaofficebook") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BBVAOfficeBook-Bold';
+  src: url("../assets/fonts/bbvaofficesemibold.eot");
+  src: url("../assets/fonts/bbvaofficesemibold.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/bbvaofficesemibold.woff") format("woff"), url("../assets/fonts/bbvaofficesemibold.ttf") format("truetype"), url("../assets/fonts/bbvaofficesemibold.svg#bbvaofficesemibold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Franchise';
+  src: url("fonts/franchise-bold.eot");
+  src: url("fonts/franchise-bold.eot?#iefix") format("embedded-opentype"), url("fonts/franchise-bold.woff") format("woff"), url("fonts/franchise-bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+.fontLight {
+  font-family: "BBVA Light", Helvetica, Arial, sans-serif;
+}
+
+.fontRegular {
+  font-family: "BBVA Book", Helvetica, Arial, sans-serif;
+}
+
+.fontSemiBold {
+  font-family: "BBVA Medium", Helvetica, Arial, sans-serif;
+}
+
+.fontBold {
+  font-family: "BBVA Semi Bold", Helvetica, Arial, sans-serif;
+}
+
+.fontLightItalic {
+  font-family: "BBVA Light Italic", Helvetica, Arial, sans-serif;
+}
+
+.fontRegularItalic {
+  font-family: "BBVA Medium Italic", Helvetica, Arial, sans-serif;
+}
+
+.fontSemiBoldItalic {
+  font-family: "BBVA Book Italic", Helvetica, Arial, sans-serif;
+}
+
+.fontMedium {
+  font-family: "BBVA Medium", Helvetica, Arial, sans-serif;
+}

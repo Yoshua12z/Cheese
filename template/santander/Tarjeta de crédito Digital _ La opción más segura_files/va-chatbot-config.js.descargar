@@ -1,0 +1,107 @@
+window.VA_CHATBOT_CONFIG = {
+    staticServerUrl: 'https://eastus.santandersandi.com/content/SANDI-MX/SANDI-FE/assets/',
+    enabledSurvey: true,
+    enableVoiceInput: false,
+	showEntryPoint: true,
+	entryPointAnimations: {
+	  showAnimations:true,
+	  LOADED: {
+		  animationType:"REVEAL_TEXT",
+		  staticText:false,
+	  },
+	  MINIMISED: {
+		  animationType:"REVEAL_TEXT",
+		  staticText:false
+	  },
+	  CLOSED: {
+		  animationType:"REVEAL_TEXT",
+		  staticText:false
+	  },
+    },
+    chatDisplay: {
+        locale: 'es-MX',
+        translationsUrl: 'https://eastus.santandersandi.com/content/SANDI-MX/SANDI-FE/assets/translations/',
+		displayAnimation: true,
+		entryPointAnimationEnabled: true,
+		sandiStyle: true,
+		gravityBubbles: false
+    },
+    tagging: {
+        Country: 'MX',
+        Language: 'spanish',
+        AppType: 'retail',
+        AppVersion: '1.0',
+        AppName: 'Santander Web'
+    },
+    clientAuthEndpoint: {
+        url: 'https://eastus.santandersandi.com/credentials-proxy/eva/proxy/auth',
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded'
+        },
+        body: {
+            id: '0be6bc6b-4911-4ad1-80d2-77a83457176c',
+            country: 'MX',
+            scope: 'eva.write',
+            grant_type: 'client_credentials'
+        }
+    },
+	endpoint: {
+        url: 'https://east-us-internetclient.ark.apis.santander.com/evaglobal/conversations/',
+        params: {
+            api_key: '228436ca-0017-4a34-af63-144b8d398e08',
+            user_ref: '111111',
+            channel: 'MxWeb',
+            project: 'MEX PUBLIC WEB',
+			locale: 'es-MX',
+        },
+        initHeader: {
+            accept_language: 'es-MX',
+            content_type: 'application/json'
+        },
+        initBody: {
+            text: 'MEX_PUBLIC_WEB_WELCOME',
+            code: '',
+			intent: 'MSG_Bienvenida',
+			confidence: 1
+        },
+        extraHeaders: {}
+    },
+	customStyles: {
+		//headerchat
+		headerAvatarUrl: 'https://eastus.santandersandi.com/content/SANDI-MX/SANDI-FE/assets/img/AAFF_SANDI_SYMBOL_CMYK.SVG',
+		entryPointFontFamily: 'SantanderTextW05-Regular',
+		entryPointFontSize: '16px',
+		headerFontFamily: 'SantanderHeadlineW05-Rg',
+		headerFontSize: '22px',
+	
+		//entry point with reveal text
+		entryPointRevealMobileDismiss: '6s',
+		entryPointRevealCollapse: '6s',
+		entryPointIconWidth: '60px',
+		entryPointIconHeight: '60px',
+		entryPointExpandedWidth: '250px',
+		entryPointIcon: 'https://eastus.santandersandi.com/content/SANDI-MX/SANDI-FE/assets/img/AAFF_SANDI_SYMBOL_CMYK.SVG',
+		entryPointIconMargin: '0 0 0 0',
+		entryPointIconMinScale: '0.8',
+		entryPointIconMaxScale: '1',
+		entryPointTextPaddingLeft: '26px',
+		entryPointTextPaddingBottom: '3px',
+	
+		//notifications
+		entryPointNotificationHeight: '22px',
+		entryPointNotificationWidth: '22px',
+	
+		textInputBarFontSize: '16px',
+		sendButtonColor: '#FFFFFF',
+		chatInputIcon: 'https://eastus.santandersandi.com/content/SANDI-MX/SANDI-FE/assets/img/AAFF_SANDI_SYMBOL_CMYK.SVG',
+	
+		// Entry point colors
+		entryPointBackgroundColor: '#ec0000',
+		entryPointFontColor: '#ffffff',
+		entryPointBorderColor: '#ec0000',
+	
+		// Bubbles User colors
+		bubblesUserFontColor: '#000000',
+		bubblesUserBackgroundColor: '#deedf2',
+	  }
+};

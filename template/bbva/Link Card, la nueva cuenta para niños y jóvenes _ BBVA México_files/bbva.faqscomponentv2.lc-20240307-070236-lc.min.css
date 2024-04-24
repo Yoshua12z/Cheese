@@ -1,0 +1,111 @@
+:root{--faqscomponent-close-color:#121212}
+.dark-theme{--faqscomponent-close-color:#fff}
+.faqscomponentv2{position:relative;zoom:1;width:100%;display:block}
+.faqscomponentv2::before,.faqscomponentv2::after{content:' ';display:block;height:0;width:0;overflow:hidden}
+.faqscomponentv2::after{clear:both}
+.faqscomponentv2__base{padding:64px 0}
+@media(min-width:992px){.tabs__contents .faqscomponentv2__base{margin:0 -16px}
+}
+@media(min-width:0) and (max-width:599px){.faqscomponentv2__base{padding:40px 16px 24px}
+}
+@media(min-width:600px) and (max-width:991px){.faqscomponentv2__base{padding:64px 16px 72px}
+}
+@media(min-width:0) and (max-width:991px){.faqscomponentv2{-webkit-box-sizing:content-box;box-sizing:content-box}
+.faqscomponentv2 .faqscomponentv2__questions__answers__header{display:block}
+}
+.faqscomponentv2__header{font-family:"BentonSansBBVA-Medium",Helvetica,Arial,sans-serif;font-size:22px;line-height:32px}
+@media(min-width:992px){.faqscomponentv2__header{font-size:26px}
+}
+.faqscomponentv2__section{padding-bottom:32px}
+@media(min-width:0) and (max-width:599px){.faqscomponentv2__section{width:100%;float:left;margin-left:0;margin-right:0;padding-bottom:20px}
+}
+@media(min-width:600px) and (max-width:991px){.faqscomponentv2__section{-webkit-box-sizing:border-box;box-sizing:border-box;width:100%;float:left;padding-left:16px;padding-right:16px;padding-left:0}
+}
+@media(min-width:992px) and (max-width:1199px){.faqscomponentv2__section{width:928px;float:left;margin-left:16px;margin-right:16px}
+}
+@media(min-width:1200px){.faqscomponentv2__section{width:1144px;float:left;margin-left:16px;margin-right:16px}
+}
+@media(min-width:0) and (max-width:599px){.faqscomponentv2__sectiontitle.sectiontitle--bullet{margin-bottom:24px}
+}
+.faqscomponentv2__questions__list{margin-top:-8px}
+@media(min-width:0) and (max-width:599px){.faqscomponentv2__questions__list{width:100%;float:left;margin-left:0;margin-right:0}
+}
+@media(min-width:600px) and (max-width:991px){.faqscomponentv2__questions__list{-webkit-box-sizing:border-box;box-sizing:border-box;width:100%;float:left;padding-left:16px;padding-right:16px;padding-left:0}
+}
+@media(min-width:992px){.faqscomponentv2__questions__list{width:288px;float:left;margin-left:16px;margin-right:16px;width:calc(30% - 32px)}
+}
+.faqscomponentv2__questions__list__item{width:100%}
+.faqscomponentv2__questions__list__item__link{padding:8px 0 16px;cursor:pointer}
+.faqscomponentv2__questions__answers{min-height:320px;display:none}
+@media(min-width:0) and (max-width:991px){.faqscomponentv2__questions__answers{position:fixed;height:100%;top:0;left:0;z-index:100}
+}
+@media(min-width:992px){.faqscomponentv2__questions__answers{-webkit-box-sizing:border-box;box-sizing:border-box;padding:0 0 0 32px;border-left:1px solid #d3d3d3}
+}
+@media(min-width:0) and (max-width:599px){.faqscomponentv2__questions__answers{width:100%;float:left;margin-left:0;margin-right:0}
+}
+@media(min-width:600px) and (max-width:991px){.faqscomponentv2__questions__answers{-webkit-box-sizing:border-box;box-sizing:border-box;width:100%;float:left;padding-left:16px;padding-right:16px;margin-right:0}
+}
+@media(min-width:992px){.faqscomponentv2__questions__answers{width:608px;float:left;margin-left:16px;margin-right:16px;width:calc(70% - 32px)}
+}
+.faqscomponentv2__questions__answers__header{padding:0 16px 0;height:64px}
+.faqscomponentv2__questions__answers__header .sectiontitle--bullet{position:absolute;padding-top:32px}
+@media(min-width:0) and (max-width:599px){.faqscomponentv2__questions__answers__header .sectiontitle--bullet{display:none}
+}
+.faqscomponentv2__questions__answers__header__close{border:0;background:0}
+@media(min-width:0) and (max-width:599px){.faqscomponentv2__questions__answers__header__close{padding:24px 8px 8px 0}
+}
+@media(min-width:600px) and (max-width:991px){.faqscomponentv2__questions__answers__header__close{padding:28px 8px;position:absolute;right:0;top:0}
+}
+.faqscomponentv2__questions__answers__header__close .bbva-icon{color:var(--faqscomponent-close-color,#121212)}
+@media(min-width:0) and (max-width:599px){.faqscomponentv2__questions__answers__header__close .bbva-icon{font-size:24px;margin-left:0}
+}
+@media(min-width:992px){.faqscomponentv2__questions__answers__header{display:none}
+}
+@media(min-width:0) and (max-width:991px){.faqscomponentv2__questions__answers__footer{position:absolute;padding:0 16px 0;height:88px;width:100%;left:0;bottom:0}
+}
+.faqscomponentv2__questions__answers__footer__nav{padding-bottom:8px}
+.faqscomponentv2__questions__answers__footer__nav__link{text-align:left;padding:8px 0 8px}
+@media(min-width:992px){.faqscomponentv2__questions__answers__footer__nav{float:right}
+}
+.faqscomponentv2__questions__answers__footer__direction{padding-bottom:24px;width:100%;float:left}
+@media(min-width:992px){.faqscomponentv2__questions__answers__footer__direction{display:none}
+}
+.faqscomponentv2__questions__answers__footer__direction--left,.faqscomponentv2__questions__answers__footer__direction--right{float:left;padding:8px 0 8px;border:0}
+.faqscomponentv2__questions__answers__footer__direction--hidden{display:none}
+.faqscomponentv2__questions__answers__footer__direction--right{float:right}
+.faqscomponentv2__questions__answers .faqcontentv2__backbutton{display:none}
+.faqscomponentv2__questions__answers .loading{opacity:0;visibility:hidden;min-height:0;max-height:0}
+.faqscomponentv2__questions__answers__item{opacity:0;height:0;overflow:hidden;will-change:opacity;visibility:hidden;-webkit-transition:opacity .66667s cubic-bezier(0.24,0.22,0.31,1.07),height .66667s cubic-bezier(0.24,0.22,0.31,1.07);transition:opacity .66667s cubic-bezier(0.24,0.22,0.31,1.07),height .66667s cubic-bezier(0.24,0.22,0.31,1.07)}
+.faqscomponentv2__questions__answers__item--visible{visibility:visible;opacity:1;height:auto}
+.faqscomponentv2__questions__answers__target{will-change:opacity;-webkit-transition:opacity .66667s cubic-bezier(0.24,0.22,0.31,1.07);transition:opacity .66667s cubic-bezier(0.24,0.22,0.31,1.07);min-height:288px;padding:0 16px}
+@media(min-width:0) and (max-width:991px){.faqscomponentv2__questions__answers__target{-webkit-box-sizing:border-box;box-sizing:border-box;padding-bottom:88px;height:75%;overflow:scroll}
+}
+.faqscomponentv2__questions__answers__target--hidden{display:none}
+.faqscomponentv2__questions__answers--inicialized{display:block}
+.faqscomponentv2__questions__answers--open .faqscomponentv2__questions__answers__target{opacity:1;visibility:visible}
+.faqscomponentv2__questions__answers--loading .loading{min-height:288px;opacity:1;visibility:visible;max-height:inherit}
+.faqscomponentv2__questions__answers--loading .faqscomponentv2__questions__answers__target{opacity:0;-webkit-transition:opacity 0;transition:opacity 0;visibility:hidden;min-height:0;max-height:0}
+.faqquestionanswer__base{display:block;width:100%}
+@media(min-width:0) and (max-width:992px){.faqquestionanswer__base{-webkit-box-sizing:border-box;box-sizing:border-box;padding:0 16px 32px}
+}
+.faqquestionanswer__title{font-family:"BentonSansBBVA-Medium",Helvetica,Arial,sans-serif;font-size:20px;line-height:24px;margin-bottom:32px}
+@media(min-width:992px){.faqquestionanswer__title{font-size:22px;line-height:32px}
+}
+.faqquestionanswer__text{margin-bottom:16px}
+.faqquestionanswer__text ul li ul,.faqquestionanswer__text ul li ol{margin-left:16px}
+.faqquestionanswer__text ol{list-style:decimal;list-style-position:inside}
+.faqquestionanswer__text ol ol,.faqquestionanswer__text ol ul{margin-left:16px}
+.faqquestionanswer__container{float:left}
+@media(min-width:0) and (max-width:992px){.faqquestionanswer__container{display:block;clear:both;width:100%;margin-bottom:32px}
+}
+.faqquestionanswer__image{width:264px;height:176px;margin-right:32px;position:relative}
+@media(min-width:0) and (max-width:992px){.faqquestionanswer__image{width:100%;height:auto;display:block}
+}
+.faqquestionanswer__youtube{color:#fff;text-align:center;display:block;position:absolute;width:100%;padding-right:32px;-webkit-box-sizing:border-box;box-sizing:border-box;top:64px;font-size:48px;line-height:48px}
+.faqquestionanswer__youtube .bbva-icon{font-size:48px}
+.faqquestionanswer__video{position:relative}
+.faqquestionanswer__link{margin-top:32px}
+.faqquestionanswer__link .bbva-icon{font-size:24px}
+.faqquestionanswer__backbutton{border-top:1px solid #d3d3d3;padding-top:32px;margin-top:0}
+@media(min-width:992px){.faqquestionanswer__backbutton{margin-top:32px}
+}

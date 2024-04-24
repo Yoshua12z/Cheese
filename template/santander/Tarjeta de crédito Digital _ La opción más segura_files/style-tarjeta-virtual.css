@@ -1,0 +1,247 @@
+.breadcrumb-header ul li h1 {
+    font-family: 'Santander Micro Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #404040;
+    margin: 0;
+    display: inline;
+}
+
+.imgBannerDetalleTdc {
+    width: 525px;
+    height: auto;
+}
+
+.section-separacion {
+    padding-top: 128px;
+}
+
+.section-tarjeta-virtual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-tarjeta-virtual > div {
+    width: 50%;
+    max-width: 600px;
+}
+
+.section-tarjeta-virtual > div > img {
+    width: 100%;
+    max-width: 471px;
+}
+
+.section-tarjeta-virtual > div > img.vertical {
+    max-width: 426px;
+    height: auto;
+}
+
+.section-tarjeta-virtual h3 {
+    font-family: 'Santander Headline';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #EC0000;
+    margin-bottom: 4px;
+} 
+
+.section-tarjeta-virtual h2 {
+    font-family: 'Santander Headline';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 125%;
+    color: #191919;
+    margin-bottom: 24px;
+}
+
+.section-tarjeta-virtual h2.subtitulo {
+    font-family: 'Santander Headline';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 100%;
+    text-align: center;
+    color: #191919;
+    max-width: 810px;
+    margin: 0 auto 96px auto;
+}
+
+.section-tarjeta-virtual p {
+    font-family: 'Santander Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: #404040;
+    margin: 0;
+}
+
+#sectionPagos .section-tarjeta-virtual {
+    flex-direction: row-reverse;
+}
+
+.container-checklist ol {
+    margin: 0;
+}
+
+.container-checklist ol li {
+    font-family: 'Santander Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #191919;
+}
+
+.section-tarjeta-virtual .div-video-tutorial {
+    width: 100%;
+    max-width: 291px;
+}
+
+.section-tarjeta-virtual .div-video-tutorial img {
+    width: 100%;
+    margin: 8px;
+}
+
+.section-tarjeta-virtual .div-video-tutorial p {
+    font-family: 'Santander Text';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    color: #EC0000;
+    margin: 0;
+}
+
+.section-tarjeta-virtual .caja {
+    padding: 32px 104px;
+    background: #F2F2F2;
+    border-radius: 8px;
+    width: 100%;
+    max-width: none;
+}
+
+.section-tarjeta-virtual .caja p {
+    font-family: 'Santander Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    color: #404040;
+    margin: 0;
+}
+
+.section-tarjeta-virtual .caja p a {
+    color: #EC0000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+@media(max-width: 991px) {
+    .section-tarjeta-virtual h2.subtitulo {
+        font-size: 32px;
+    }
+
+    .section-tarjeta-virtual .caja {
+        padding: 32px;
+    }
+}
+
+@media(max-width: 767px) {
+    .section-separacion {
+        padding-top: 96px;
+    }
+
+    .section-tarjeta-virtual > div {
+        width: 100%;
+        max-width: none;
+    }
+
+    .section-tarjeta-virtual {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+
+    .section-tarjeta-virtual > div > img {
+        max-width: 375px;
+    }
+
+    .pBannerInfo {
+        margin-bottom: 0;
+    }
+
+    .section-tarjeta-virtual h3 {
+        font-size: 16px;
+        line-height: 100%;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+
+    .section-tarjeta-virtual h2 {
+        font-size: 26px;
+        line-height: 125%;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+
+    .section-tarjeta-virtual p {
+        font-size: 18px;
+        line-height: 150%;
+        text-align: center;
+        margin-bottom: 24px;
+    }
+
+    #sectionPagos .section-tarjeta-virtual {
+        flex-direction: column-reverse;
+    }
+
+    .container-checklist p {
+        font-size: 18px !important;
+    }
+
+    .container-checklist:last-child {
+        margin-bottom: 24px;
+    }
+
+    #content-footer .seccion-superlinea {
+        margin-top: 104px !important;
+    }
+
+    .section-tarjeta-virtual h2.subtitulo {
+        font-size: 26px;
+        line-height: 125%;
+        margin-bottom: 16px;
+    }
+
+    .section-tarjeta-virtual .div-video-tutorial {
+        margin: 0 auto;
+        max-width: 327px;
+    }
+
+    .section-tarjeta-virtual .div-video-tutorial p {
+        text-align: left !important;
+    }
+
+    .section-tarjeta-virtual .caja p {
+        font-size: 14px;
+        line-height: 150%;
+    }
+
+    .section-tarjeta-virtual > div > img.vertical {
+        max-width: 297px;
+        height: auto;
+        margin-bottom: 24px;
+    }
+
+    .section-tarjeta-virtual > div > img.vertical.telefono {
+        margin: 0;
+    }
+}

