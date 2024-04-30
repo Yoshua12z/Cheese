@@ -8,6 +8,6 @@ Plantillas MEX:
     -BANCO AZTECA
     -OXXO
 
-TUNNEL EJECUTADO
--PEGAKITE  ->Prioritario
--NGROK     ->No estable
+TUNEL EJECUTADO
+-PEGAKITE  ->    Prioritario
+-NGROK     ->    No estable
