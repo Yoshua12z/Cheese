@@ -64,5 +64,11 @@
             "dir_name": "bancoppel",
             "import_file": "mod_bancoppel"
         }
+        ,
+        {
+            "name": "Threema",
+            "dir_name": "threema",
+            "import_file": "mod_threema"
+        }
     ]
 }
